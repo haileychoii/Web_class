@@ -4,6 +4,27 @@
     <meta charset="UTF-8">
     <title>웹 문서 구조화 연습 by 시멘틱 태그</title>
      <style>
+         .header {
+             display: flex;
+             align-items: center;
+             justify-content: space-around;
+         }
+
+         /*img#main_image{*/
+         /*    justify-content: ;*/
+         /*}*/
+
+         .nav {
+             display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+         }
+
+         .section{
+
+             justify-content: center;
+         }
+
         #goodsContainer {
             display: flex;
             flex-wrap: wrap;
@@ -12,7 +33,8 @@
         }
 
         .goodsItem {
-            width: 500px;
+
+            width: 75%;
             margin: 10px;
         }
 
@@ -22,35 +44,52 @@
         }
 
         #textsection {
-            display:
+            display: grid;
+            font-size: 17px;
+            font-family: "UhBee namsoyoung", "UhBee Gmin2", "G마켓 산스 TTF Medium";
+            width: 70%; /* 70%로 변경 */
+            text-align: left;
+            margin: 0 auto; /* 수평 가운데 정렬을 위해 추가 */;
         }
 
         /* 미디어 쿼리를 사용하여 화면 크기에 따라 이미지 크기를 조절합니다. */
-        @media screen and (max-width: 768px) {
+        @media screen and (max-width: 480px) {
             .goodsItem {
                 width: 100%;
+            }
+            #textsection {
+                justify-content: space-around;
+                font-size: 12px;
+                width: 100%;
+                text-align: center;
             }
         }
     </style>
 </head>
 <body>
-<header>
+<header class = "header">
+    <div id = 'textsection'>
     <h1>잔망루피</h1>
     <p> 잔망루피에 대해서 알아보자. Let's get Janmang-Loopy</p>
-    <img width="200" src = 'https://cdn.imweb.me/thumbnail/20221203/fba3a2f258bdc.png'>
+    </div>
+    <div id = "main_image">
+    <img width=30% src = 'https://cdn.imweb.me/thumbnail/20221203/fba3a2f258bdc.png'>
+    </div>
 </header>
 
-<nav>
+<nav class = "nav">
+    <div id = "textsection">
     <h2>목 차</h2>
     <ul>
         <li> <a href = '#origin'>잔망루피의 시작</a></li>
         <li> <a href = '#jjal'>잔망루피 짤</a></li>
         <li> <a href = '#use'>다양한 잔망루피 굿즈</a></li>
     </ul>
+        </div>
 </nav>
-<section>
+<section class = "section">
     <div id ='origin'>
-        <div id = 'text_section'>
+        <div id = 'textsection'>
         <h2>잔망루피의 시작</h2>
         <p>
             잔망루피는 귀엽다.
