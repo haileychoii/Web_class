@@ -3,71 +3,158 @@
 <head>
     <meta charset="UTF-8">
     <title>register</title>
+    <style>
+        #need {
+            font-size: 10pt;
+            color: red;
+        }
+        #mdtitle {
+            font-weight: bold;
+            background-color: lightblue;
+            width: 800px;
+            padding-left: 10px;
+        }
+        #form-area  label {
+            display: inline-block;
+            text-align: right;
+            width: 130px;
+            padding-right: 8px;
+        }
+        #need-text {
+            color: red;
+        }
+        #b-done {
+            margin-left: 200px;
+        }
+
+    </style>
 </head>
-    <h2>취업 정보 계정 만들기</h2>
+
+<body>
+<div id = "job-account">
+    <div id = 'container'>
+    <h2 id = 'title'>취업 정보 계정 만들기</h2>
 
     <p id = 'need'>* 필수 입력 항목</p>
 
-    <p id = 'small_title'>기본 정보</p><br>
-    <label for = 'name'>이 름* </label>
-    <input type = 'text' id = 'name' name = 'name' maxlength = '8'>
-    <br>
-    <label for = 'email'>이메일* </label>
-    <input type = 'email' id = 'email' name = 'email' maxlength = '15' placeholder = 'id@domain.com'>
-    <br>
-    <label for = 'password'>암호* </label>
-    <input type = 'password' id = 'password' name = 'password' maxlength = '12'>
-    <br>
-    <label for = 'password_check'>암호 확인* </label>
-    <input type = 'password' id = 'password_check' name = 'password_check' maxlength = '12'>
-    <br>
-    <label for = 'phone'>모바일 폰* </label>
-    <input type = 'tel' id = 'phone' name = 'phone' maxlength = '13' placeholder = '000-0000-0000'>
-    <br>
-    <label for = 'website'>개인 홈페이지</label>
-    <input type = 'url' id = 'website' name = 'website' maxlength = '30' placeholder = 'http://'>
-    <br>
-    <label for = 'address'>주소* </label>
-    <input type = 'text' id = 'address' name = 'address' maxlength = '30'>
-    <br><br>
-    <p id = 'small_title'>학 력</p><br>
-    <label for = 'school'>학교 명* </label>
-    <input type = 'text' id = 'school' name = 'school' maxlength = '12'>
-    <br>
-    <label for="major">전 공* </label>
-    <input type ='text' id = 'major' name = 'major' maxlength = '12'>
-    <br>
-    <label for = 'graduation'>졸업 여부* </label>
-    <select id = 'graduation' name = 'graduation'>
-        <option value = '선택'>---선택---</option>
-        <option value = '졸업 예정'>졸업예정</option>
-        <option value = '졸업'>졸업</option>
-    </select>
-    <br>
-    <label for = 'date'>졸업 (예정)일</label>
-    <input type = 'date' id = 'date' name = 'date'>
-    <br><br>
-    <p>업무 경력</p><br>
-    <label for = 'company_name'>근무업체명</label>
-    <input type = 'text' id = 'company_name' name = 'company_name' maxlength = '20'>
-    <br>
-    <label for = 'position'>직위</label>
-    <input type = 'text' id = 'position' name = 'position' maxlength = '10'>
-    <br>
-    <label for = 'working'>담당 업무</label>
-    <textarea  id = 'working' rows = '10' cols = '80' placeholder = '이전 업체에서 담당한 업무를 기술하시오.'></textarea>
-    <br>
-    <label for = 'years'>근무 년수</label>
-    <input type = 'number' id = 'years' name = 'years' min = '0' max = '10' step = '0.5'>년</input>
-    <br><br>
-    <p id = 'small_title'>자기소개서</p><br>
-    <label for = 'files'>첨부 파일</label>
-    <input type = 'file' id = 'files' name = 'files'>
-    <br><br>
+    <div id = 'mdtitle'>기본 정보</div>
+    <div id = 'form-area'>
+
+    <p>
+        <label for = 'name'>이 름<span id = 'need-text'>*</span> </label>
+        <input type = 'text' id = 'name' name = 'name' size = '8'>
+    </p>
+
+    <p>
+        <label for = 'email'>이메일<span id = 'need-text'>*</span> </label>
+        <input type = 'email' id = 'email' name = 'email' size = '15' placeholder = 'id@domain.com'>
+    </p>
+
+    <p>
+        <label for = 'password'>암호<span id = 'need-text'>*</span> </label>
+        <input type = 'password' id = 'password' name = 'password' size = '12'>
+    </p>
+
+    <p>
+        <label for = 'password_check'>암호 확인<span id = 'need-text'>*</span> </label>
+        <input type = 'password' id = 'password_check' name = 'password_check' size = '12'>
+    </p>
+
+    <p>
+        <label for = 'phone'>모바일 폰<span id = 'need-text'>*</span> </label>
+        <input type = 'tel' id = 'phone' name = 'phone' size = '13' placeholder = '000-0000-0000'>
+    </p>
+
+    <p>
+        <label for = 'website'>개인 홈페이지</label>
+        <input type = 'url' id = 'website' name = 'website' size = '30' placeholder = 'http://'>
+    </p>
+
+    <p>
+        <label for = 'address'>주소<span id = 'need-text'>*</span> </label>
+        <input type = 'text' id = 'address' name = 'address' size = '30'>
+    </p>
+    </div>
+<!--   form-area     -->
+    </div>
+<!--      section-->
+
+
+    <div id = 'container'>
+    <div id = 'mdtitle'>학 력</div>
+    <div id = 'form-area'>
+    <p>
+        <label for = 'school'>학교 명<span id = 'need-text'>*</span> </label>
+        <input type = 'text' id = 'school' name = 'school' size = '12'>
+    </p
+
+    <p>
+        <label for="major">전 공<span id = 'need-text'>*</span> </label>
+        <input type ='text' id = 'major' name = 'major' size = '12'>
+    </p>
+
+    <p>
+        <label for = 'graduation'>졸업 여부<span id = 'need-text'>*</span> </label>
+        <select id = 'graduation' name = 'graduation'>
+            <option value = '선택'>---선택---</option>
+            <option value = '졸업 예정'>졸업예정</option>
+            <option value = '졸업'>졸업</option>
+        </select>
+    </p>
+
+    <p>
+        <label for = 'date'>졸업 (예정)일</label>
+        <input type = 'date' id = 'date' name = 'date'>
+    </p>
+    </div>
+    </div>
+
+    <div id = 'container'>
+        <div id = 'mdtitle'>업무 경력</div>
+    <div id = 'form-area' >
+    <p>
+        <label for = 'company_name'>근무업체명</label>
+        <input type = 'text' id = 'company_name' name = 'company_name' size = '20'>
+    </p>
+
+    <p>
+        <label for = 'position'>직위</label>
+        <input type = 'text' id = 'position' name = 'position' size = '10'>
+    </p>
+
+    <p>
+        <label for = 'working'>담당 업무</label>
+        <textarea  id = 'working' rows = '10' cols = '80' placeholder = '이전 업체에서 담당한 업무를 기술하시오.'></textarea>
+    </p>
+
+    <p>
+        <label for = 'years'>근무 년수</label>
+        <input type = 'number' id = 'years' name = 'years' min = '0' max = '10' step = '0.5'>년
+    </p>
+
+    </div>
+    </div>
+
+    <div id="section">
+        <div id = 'form-area'>
+    <div id = 'mdtitle'>자기소개서</div>
+    <p>
+        <label for = 'files'>첨부 파일</label>
+        <input type = 'file' id = 'files' name = 'files'>
+    </p>
+
+    </div>
+    </div>
+    </div>
+
+<!--    맨밑 submit, reset button-->
+    <div id = 'b-done'>
+    <p>
     <input type = 'submit' id = 'submit' value = '제출'>
     <input type = 'reset' id = 'reset' value = '재작성'>
+    <p>
+    </div>
 
-<body>
 
 </body>
 </html>
