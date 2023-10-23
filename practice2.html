@@ -4,24 +4,43 @@
     <meta charset="UTF-8">
     <title>웹 문서 구조화 연습 by 시멘틱 태그</title>
      <style>
-         .header {
+         #container{
              background-color: #e5c7ca;
+         }
+
+         .header {
+
              display: grid;
              align-items: center;
              justify-content: center;
          }
+         .header h1{
+             margin-top: 70px;
+         }
 
-         img#main_image{
-
+         #main_image{
+             display: flex;
+             justify-content: center;
              float: center;
          }
 
-         nav {
-             width: auto;
-             float: left;
-             font-size: 8px;
-             font-family: "UhBee namsoyoung";
+         #nav {
+             background-color: #f1aeb5;
+             backdrop-filter: blur(10px);
 
+             display: flex;
+             width: 100%;
+             position: fixed;
+
+         }
+
+         #nav span{
+             display: inline-block;
+             text-align: center;
+             margin: 10px;
+
+             font-size: 12px;
+             font-family: "UhBee namsoyoung";
          }
 
          section{
@@ -60,17 +79,35 @@
             .goodsItem {
                 width: 100%;
             }
+            #nav span{
+                font-size: 8px;
+            }
+
             #textsection {
                 justify-content: space-around;
                 font-size: 12px;
-                width: 100%;
+                width: 90%;
                 text-align: center;
             }
         }
     </style>
 </head>
 <body>
-<div
+<div id = container>
+<div id = 'nav'>
+
+    <div id = 'nav_sub'>
+        <a href = '#origin'><span>잔망루피의 시작</span></a>
+    </div>
+    <div id = 'nav_sub'>
+        <a href = '#jjal'><span>잔망루피 짤</span></a>
+    </div>
+    <div id = 'nav_sub'>
+        <a href = '#use'><span>다양한 잔망루피 굿즈</span></a>
+    </div>
+
+</div>
+
 <header class = "header">
     <div id = 'textsection'>
     <h1>잔망루피</h1>
@@ -78,22 +115,11 @@
     </div>
     <div id = "main_image">
     <img width=30% src ='photo/janmangloopy1-removebg-preview.png'>
+        <img width = 30% src = 'https://item.kakaocdn.net/do/47b82cccfb62e78d71b1590e32a57e5e7154249a3890514a43687a85e6b6cc82'>
     </div>
 </header>
 
-<nav class = "nav">
-    <div id = "nav_text">
-    <h2>목 차</h2>
-        <div id = 'nav_text2'>
-        <a href = '#origin'>잔망루피의 시작</a>
-        <br>
-        <a href = '#jjal'>잔망루피 짤</a>
-        <br>
-        <a href = '#use'>다양한 잔망루피 굿즈</a>
-        <br>
-        </div>
-        </div>
-</nav>
+
 <section class = "section">
     <div id ='origin'>
         <div id = 'textsection'>
@@ -164,7 +190,8 @@
 
 
     </div>
-
+</div>
+<!--#container div tag-->
 </section>
 
 
