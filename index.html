@@ -4,21 +4,71 @@
     <meta charset="UTF-8">
     <title>index</title>
     <style>
-        #container{
-            font-family: 'UhBee namsoyoung', 'UhBee MiMi', "G마켓 산스 TTF Medium";
-            width: 90%;
-            display: grid;
 
+        #box{
+            background-color: #e5c7ca;
+            font-family: 'UhBee namsoyoung', 'UhBee Se_hyun', "G마켓 산스 TTF Medium";
+            width: 100%;
+            position: static;
+
+        }
+
+        #box>span {
+            font-size: 35px;
+            display: flex;
+            justify-content: space-around;
+
+
+        }
+
+        .f{
+            display: flex;
+            font-size = 12px;
+
+        }
+
+        .f span{
+            display: inline-block;
+            width: 120px;
+            margin: 5px
+        }
+
+        @media screen and (max-width: 480px) {
+            #box {
+                width: 100%;
+            }
+            .f{
+            display: flex;
+            font-size : 12px;
+
+        }
+
+            .f span{
+            display: inline-block;
+            width: 60px;
+            margin: 5px
+        }
+
+
+            #box>span {
+            font-size: 25px;
+
+            display: flex;
+            justify-content: center;
+
+
+        }
         }
     </style>
 </head>
 <body>
-<div id = 'container'>
-<h1>
+
+<div id = 'box'>
+<span>
   2023-2 web programming class
-</h1>
-    <div>
-        <a href="hw/register.html">회원가입</a> &nbsp; <a href="hw/login.html">로그인</a>
+</span>
+    <div class="f">
+        <a href="hw/register.html"><span id = 1>회원가입</span></a> &nbsp; <a href="hw/login.html"><span id = 1>로그인</span></a>
     </div>
     <div id = jl>
         <a href = 'practice2.html'><span>janmangloopy</span></a>
