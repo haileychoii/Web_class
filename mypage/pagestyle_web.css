@@ -198,28 +198,32 @@
 
 
 /*navvar*/
-.home .nav-var {
-  position: fixed;
-  width: 100%;
-  height: 51px;
-  top: 0;
-  left: 0;
-  box-shadow: 0px 4px 4px #00000040;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
+/*.home .nav-var {*/
 
-.home .nav-var-frame {
+/*  width: 100%;*/
+/*  height: 51px;*/
+/*  top: 0;*/
+/*  left: 0;*/
+/*  box-shadow: 0px 4px 4px #00000040;*/
+/*  display: flex;*/
+/*  justify-content: center;*/
+/*  align-items: center;*/
+/*}*/
+
+.home .nav-var {
   display: flex;
-  position: relative;
+  position: fixed;
   width: 100%;
   height: 53px;
   top: 0px;
+  left: 0;
+  justify-content: center;
+  align-items: center;
   /*left: -1px;*/
   border: 1px ;
   border-color: transparent;
-  box-shadow: inset -5px -5px 250px #ffffff05;
+  /*box-shadow: inset -5px -5px 250px #ffffff05;*/
+  box-shadow: 0px 4px 4px #00000040;
   backdrop-filter: blur(20px) brightness(100%);
   -webkit-backdrop-filter: blur(42px) brightness(100%);
   border-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.08), rgba(238, 237.01, 237.01, 0.5)) 1;
@@ -227,34 +231,40 @@
 
 }
 
-.home .menus-home {
-  position: relative;
-  top: 17px;
-  left: 352px;
-  width: 447px;
-  height: 17px;
-  display: flex;
-}
+/*.home .menus-home {*/
+/*  position: relative;*/
+/*  top: 17px;*/
+/*  left: 352px;*/
+/*  width: 447px;*/
+/*  height: 17px;*/
+/*  display: flex;*/
+/*}*/
 
 .home .menus-home-txt {
-  position: absolute;
-  top: 0;
-  left: 8px;
+  width: 438.98px;
+  height: 17px;
+  position: relative>
+}
+
+.home .menus-home-container {
+
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
   width: 447px;
   height: 17px;
-  display: flex;
-  align-items: center;
+  padding-right: 0.02px;
+  gap: 3px;
 }
 
 .home .ellipse {
-  position: absolute;
   width: 5px;
   height: 5px;
-  top: 6px;
-  left: 0;
-  background-color: #fdb827;
-  border-radius: 2.5px;
+  background: #FDB827;
+  border-radius: 9999px
 }
+
+
 
 .text-wrapper-4,
 .text-wrapper-5,
@@ -268,7 +278,7 @@
   text-align: center;
   letter-spacing: 0;
   line-height: normal;
-  margin-right: 40px; /* 각 텍스트 간의 간격 조절 */
+  margin: 0 20px; /* 가로 간격을 조절하고 좌우 여백을 추가 */
 }
 
 /*navvar end*/
