@@ -8,6 +8,7 @@
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
+  overflow-scrolling: auto;
 
 }
 
@@ -280,7 +281,7 @@
   left: 0;
 }
 
-
+/*footer*/
 
 .home .footer {
   position: absolute;
@@ -303,4 +304,4 @@
     margin-right: 20px;
 }
 
-
+/*footer end*/
