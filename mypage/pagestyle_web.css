@@ -82,7 +82,7 @@
   position: absolute;
   width: 559px;
   height: 85px;
-  top: 298px;
+  top: 275px;
   left: 209px;
 }
 
@@ -97,7 +97,8 @@
   font-size: var(--font-home-body-font-size);
   text-align: center;
   letter-spacing: var(--font-home-body-letter-spacing);
-  line-height: var(--font-home-body-line-height);
+  /*line-height: var(--font-home-body-line-height);*/
+  line-height: 1.7em;
   font-style: var(--font-home-body-font-style);
 }
 
