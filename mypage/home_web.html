@@ -8,6 +8,8 @@
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
+    <link rel="stylesheet" href="style_navvar_css.css">
+
     <link rel="stylesheet" href="styleguide.css" />
     <link rel="stylesheet" href="pagestyle_web.css" />
   </head>
@@ -42,23 +44,39 @@
 
 
 
-<div class="nav-var">
-<div class="menus-home-container" >
-  <div class="ellipse"></div>
-  <div class="menus-home-txt" style="width: 438.98px; height: 17px; position: relative">
-    <a href = 'portfolios_web.html'><div class="Portfolios" style="width: 67.15px; left: 293.66px; top: 0px; position: absolute; text-align: center; color: white; font-size: 14px; font-family: 'Inter', Helvetica; font-weight: 700; word-wrap: break-word">Portfolios</div></a>
-    <a href = 'about_web.html'><div class="About" style="width: 43.10px; left: 92.21px; top: 0px; position: absolute; text-align: center; color: white; font-size: 14px; font-family: 'Inter', Helvetica; font-weight: 700; word-wrap: break-word">About</div></a>
-    <a href = 'home_web.html'><div class="Home" style="width: 41.09px; left: 0px; top: 0px; position: absolute; text-align: center; color: white; font-size: 14px; font-family: 'Inter', Helvetica; font-weight: 700; word-wrap: break-word">Home</div></a>
-    <a href = 'blog_web.html'><div class="Blog" style="width: 35.07px; left: 407.91px; top: 0px; position: absolute; text-align: center; color: white; font-size: 14px;font-family: 'Inter', Helvetica; font-weight: 700; word-wrap: break-word">Blog</div></a>
-    <a href = 'contact_web.html'><div class="Contact" style="width: 56.13px; left: 186.42px; top: 0px; position: absolute; text-align: center; color: white; font-size: 14px; font-family: 'Inter', Helvetica; font-weight: 700; word-wrap: break-word">Contact</div></a>
-  </div>
-  </div>
-</div>
-</div>
+
+    <nav class="navbar sticky-top navbar-expand-lg navbar-dark navbar-text-dark nav-var">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse text-light font-weight-bold " id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item mx-5">
+                        <a class="nav-link" href="home_web.html"><span id = 'nav_txt'>Home</span></a>
+                    </li>
+                    <li class="nav-item mx-5">
+                        <a class="nav-link" href="about_web.html"><span id = 'nav_txt'>About</span></a>
+                    </li>
+                    <li class="nav-item mx-5">
+                        <a class="nav-link" href="portfolios_web.html"><span id = 'nav_txt'>Portfolios</span></a>
+                    </li>
+                    <li class="nav-item mx-5">
+                        <a class="nav-link" href="blog_web.html"><span id = 'nav_txt'>Blog</span></a>
+                    </li>
+                    <li class="nav-item mx-5">
+                        <a class="nav-link" href="contact_web.html"><span id = 'nav_txt'>Contact</span></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
 
 
         <div class="footer">
-<!--          <p class="text-wrapper">Copyright © 2021 All rights reserved.</p>-->
           <div id="footer-icon">
             <p><img src="./assets/email.svg"/></p>
             <p><img src="./assets/github.svg"/></p>

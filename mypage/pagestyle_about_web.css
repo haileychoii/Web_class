@@ -1,0 +1,5 @@
+.nav-var {
+            background: linear-gradient(159deg, rgba(255, 255, 255, 0.40) -100%, rgba(255, 255, 255, 0.04) 100%);
+            box-shadow: -5px -5px 250px 0px rgba(255, 255, 255, 0.02) inset;
+            backdrop-filter: blur(21px);
+        }
