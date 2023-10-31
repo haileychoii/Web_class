@@ -143,10 +143,6 @@
   left: 0;
   position: absolute;
   top: 0;
-}
-
-.home .about-me {
-  /*position: relative;*/
 
   height: 49px;
   /*background-color: #fdb827;*/
@@ -211,31 +207,7 @@
   white-space: nowrap;
 }
 
-/*.home .nav-var {*/
-/*  display: flex;*/
-/*  position: fixed;*/
-/*  width: 100%;*/
-/*  height: 53px;*/
-/*  top: 0px;*/
-/*  left: 0;*/
-/*  justify-content: center;*/
-/*  align-items: center;*/
-
-  /*border: 1px solid rgba(255, 255, 255, 0.08);*/
-
-/*  background: linear-gradient(159deg, rgba(255, 255, 255, 0.40) -100%, rgba(255, 255, 255, 0.04) 100%);*/
-
-/*  box-shadow: -5px -5px 250px 0px rgba(255, 255, 255, 0.02) inset;*/
-/*  backdrop-filter: blur(21px);*/
-
-/*}*/
-
-
 /*responsible navbar*/
-.nav-var {
- /*height: 9%;*/
-}
-
 .nav-var {
             width: 100%;
 max-height: 50%;
@@ -258,7 +230,7 @@ max-height: 50%;
 .navbar-toggler {
 border: None;
 height: 40%;
-            /*border: 1px solid rgba(255, 255, 255, 0.08);}*/
+
 
 
 .navbar-text {
