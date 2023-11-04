@@ -3,83 +3,98 @@
 <head>
     <meta charset="UTF-8">
     <title>index</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <style>
+        <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/font-applesdgothicneo@1.0/all.min.css">
+        <!-- Bootstrap CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/font-applesdgothicneo@1.0/all.min.css">
+        <link rel="stylesheet" href="styleguide.css" />
+        <link rel="stylesheet" href="pagestyle_web.css" />
         @font-face {font-family: 'UhBeenamsoyoung';src: url('./font/UhBeenamsoyoung.eot');}
-@font-face {font-family: 'UhBeenamsoyoung';src: url('./font/UhBeenamsoyoung.woff') format('woff');}
-#container { font-family: "UhBeenamsoyoung", serif;}
-textarea  {font-family: "UhBeenamsoyoung", serif; }
-#container {background-color: #e5c7ca}
+        @font-face {font-family: 'UhBeenamsoyoung';src: url('./font/UhBeenamsoyoung.woff') format('woff');}
+        #container { font-family: "UhBeenamsoyoung", serif;}
+        textarea  {font-family: "UhBeenamsoyoung", serif; }
+        #container {background-color: #e5c7ca}
 
-        #box{
-
-            font-family: 'UhBee namsoyoung', 'UhBee Se_hyun', "G마켓 산스 TTF Medium";
+        .animate-background {
+            font-family: 'UhBee namsoyoung', 'AppleSDGothicNeo', 'Noto Sans KR', sans-serif;
+            background: linear-gradient(
+            to right, #9ec5fe,
+            #b67ed6, #e685b5);
+            background-size: 400% 400%;
             width: 100%;
-            position: static;
-
-        }
-
-        #box>span {
-            font-size: 35px;
+            /*position: fixed;*/
+            height: 100vh;
             display: flex;
-            justify-content: space-around;
-
-
+            flex-wrap: wrap;
+            animation: animate-background 10s infinite ease-in-out;
         }
 
-        .f{
-            display: flex;
-            font-size = 12px;
-
-        }
-
-        .f span{
-            display: inline-block;
-            width: 120px;
-            margin: 5px
-        }
-
-        @media screen and (max-width: 480px) {
-            #box {
-                width: 100%;
+        @keyframes animate-background{
+            0%{
+                background-position: 0 50%;
             }
-            .f{
-            display: flex;
-            font-size : 12px;
-
+            50%{
+                background-position: 100% 50%;
+            }
+            100%{
+                background-position: 0 50%;
+            }
         }
 
-            .f span{
-            display: inline-block;
-            width: 60px;
-            margin: 5px
-        }
-
-
-            #box>span {
-            font-size: 25px;
+        .classname{
+            font-size: 50px;
+            margin: 10%;
 
             display: flex;
             justify-content: center;
+        }
 
+        .index_con{
+            margin: 20px;
+            font-size: 20px;
 
         }
+
+
+        @media screen and (max-width: 480px) {
+            .classname {
+                font-size: 30px;
+                width: 95%
+                display: flex;
+                justify-content: center;
+            }
+            .animate-background{
+                flex-direction: column;
+            }
+            .index_con{
+                font-size: 17px;
+            }
         }
+
     </style>
 </head>
 <body>
-<div id = 'container'>
-<div id = 'box'>
-<span>
+<div class = 'container-fluid animate-background'>
+
+<div class = 'classname'>
   2023-2 web programming class
-</span>
-    <div class="f">
-        <a href="hw/register.html"><span id = 1>회원가입</span></a> &nbsp; <a href="hw/login.html"><span id = 1>로그인</span></a>
-    </div>
-    <div id = jl>
-        <a href = 'practice2.html'><span>janmangloopy</span></a>
-    </div>
 </div>
+<div>
+    <p class="index_con">
+        <a href="hw/register.html"><span>회원가입</span></a>
+    </p>
+    <p class = 'index_con'><a href="hw/login.html"><span>로그인</span></a>
+    <p class = 'index_con'>
+        <a href = 'practice2.html'><span>janmangloopy</span></a>
+    </p>
+
 </div>
 
+<!-- Option 1: Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+</div>
 </body>
 </html>

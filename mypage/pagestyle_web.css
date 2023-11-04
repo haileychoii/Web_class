@@ -215,7 +215,7 @@
         }
 
 .navbar-toggler {
-border: None;
+      border: None;
     .navbar-text {
                     /*font-family: "Inter-Bold", Helvetica;*/
                     font-weight: 700;
@@ -231,8 +231,6 @@ border: None;
 .navbar-nav .nav-link:hover {
             color: #e5c7ca; /* 마우스 호버 시 색상 변경 */
         }
-
-
 .home .ellipse {
   width: 5px;
   height: 5px;
@@ -285,33 +283,48 @@ border: None;
   align-items: center;
   justify-content: center;
 }
+/*about page의 main loopy, text start*/
 /*루피+자기소개 큰 문구*/
 .about .main{
+  display: flex;
+  align-items: center;
   width: 88%;
-  background-color: #e5c7ca;
+  /*background-color: #e5c7ca;*/
+  height: 300px;
+  top: 10%;
+  right: 8%;
+  position: absolute;
 }
 /*about page의 루피 img*/
 .main_image{
   max-width: 290px;
-  min-width: 270px
+  min-width: 270px;
+  /*position: absolute;*/
+  /*display: flex;*/
+  /*align-items: center;*/
+  /*width: 88%;*/
+  /*top: 3.5%;*/
+  /*right: 8%;*/
+  /*bottom: 0;*/
+  /*left: 0;*/
 }
 .main_text{
+
   max-font-size: 55px;
   min-font-size: 32px;
   width: 702px;
-  height: 217px
+
   font-family: var(--font-about-font-family);
   font-size: var(--font-home-font-size);
-  text-align: match-parent;
+  font-weight: 700;
+  text-align: center;
   letter-spacing: var(--font-about-letter-spacing);
   line-height: var(--font-about-line-height);
   font-style: var(--font-about-font-style);
-
-
   color: 'white';
-
-  font-weight: '700';
-  word-wrap:
+  position: relatlive;
+  margin-left: 10px; /* Add some left margin to separate text from the image */
+}
 
 .yellow_txt{
   color: #FD8827;
@@ -320,7 +333,9 @@ border: None;
 .white_txt{
   color: #FFFFFF;
 }
-/*about page의 main loopy, text*/
+/*about page의 main loopy, text end*/
+
+/*about page의 글씨 body part start*/
 .about_body {
   width: 91.4%;
   display: flex;
@@ -331,6 +346,7 @@ border: None;
 .about_body_text_m{
   position: absolute;
   color:#FFFFFF;
+  flex:
   font-family: var(--font-about-body-m-font-family);
   font-size: var(--font-about-body-m-font-size);
   font-weight: var(--font-about-body-m-font-weight);
@@ -341,8 +357,9 @@ border: None;
 .about_body_text_b{
   position: absolute;
   color: #FFFFFF;
+
   font-family: var(--font-about-body-b-font-family);
   font-size: var(--font-about-body-b-font-size);
-  font-height: var(--font-about-body-b-font-weight);
+  font-weight: var(--font-about-body-b-font-weight);
   letter-spacing: normal;
 }
