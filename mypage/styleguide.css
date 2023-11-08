@@ -1,7 +1,7 @@
 :root {
   --basicwhite: rgba(255, 255, 255, 1);
   --basicyellow: rgba(253, 184, 39, 1);
-  --font-home-font-family: Pretendard, Helvetica;
+  --font-home-font-family: Pretendard, AppleSDGothicNeo, sans-serif;
   --font-home-font-weight: 900;
   --font-home-font-size: 64px;
   --font-home-letter-spacing: 0px;

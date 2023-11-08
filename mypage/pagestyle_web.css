@@ -29,7 +29,7 @@
 }
 
 .web_bg .overlap {
-  position: relative;
+  position: absolute;
   width: 983px;
   height: 388px;
   top: 111px;
@@ -151,6 +151,11 @@
   line-height: normal;
 }
 
+.web_bg .e_hh{
+  background-image: url(./assets/hh.png);
+  /*background-size: cover;*/
+}
+
 /*home buttons*/
 .web_bg .buttons {
   display: flex;
@@ -267,7 +272,7 @@
                     line-height: 0px;
                     margin: 0px;
                 }
-      }}
+      }
 
 .navbar-nav .nav-link:hover {
             color: #e5c7ca; /* 마우스 호버 시 색상 변경 */
@@ -296,7 +301,7 @@
   position: absolute;
   bottom: 0;
   width: 100%;
-  height: 45px
+  height: 45px;
   top: 655px;
   display: flex;
   justify-content: center;
@@ -386,7 +391,7 @@
 .about_body_text_m{
   position: absolute;
   color:#FFFFFF;
-  flex:
+
   font-family: var(--font-about-body-m-font-family);
   font-size: var(--font-about-body-m-font-size);
   font-weight: var(--font-about-body-m-font-weight);
@@ -409,19 +414,20 @@
   /*background-color: #000000;*/
   /*width: 100%;*/
   /*height: 100vh;*/
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
+  /*display: flex;*/
+  /*flex-wrap: wrap;*/
+  /*flex-direction: row;*/
   /*align-items: center;*/
   /*overflow-scrolling: auto;*/
 }
 
-
-
 .filebox {
   display: flex;
-  position: absolute;
-  justify-content: space-evenly;
+  position: relative;
+
+  justify-content: space-between; /* Position items at both ends */
+  align-items: center;
+  /*justify-content: space-evenly;*/
   width: 949px;
   height: 181px;
   border: 1px;
@@ -431,27 +437,19 @@
 
 .portfolios_file {
 
-  width: 48.7%;
-  height: 100%;
+  /*width: 469px;*/
+  height: 181px;
+  /*top: 0;*/
+
 
   border-radius: 19px;
   border: 1px solid rgba(255, 255, 255, 0.08);
+
   background: linear-gradient(159deg, rgba(255, 255, 255, 0.40) -100%, rgba(255, 255, 255, 0.04) 100%);
   box-shadow: -5px -5px 250px 0px rgba(255, 255, 255, 0.02) inset;
   backdrop-filter: blur(21px);
   font-family: Pretendard, AppleSDGothicNeo, sans-serif;
+  font-size: 24px;
   font-weight: 700;
   color: #ffffff;
 }
-
-/*.portfolios{*/
-/*  @media screen and (max-width: 480px){*/
-/*    .portfolios.filebox{*/
-/*      display: none;*/
-/*    }*/
-/*    .portfolios_file{*/
-/*      width: 348px;*/
-/*      height: 339px;*/
-/*    }*/
-/*  }*/
-/*}*/
