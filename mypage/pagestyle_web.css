@@ -87,6 +87,7 @@ top: 0;
 left: 0;
 font-family: var(--font-home-font-family);
 font-weight: var(--font-home-font-weight);
+  text-shadow: 0px 4px 4px #00000040;
 color: #ffffff;
 font-size: var(--font-home-font-size);
 text-align: center;
