@@ -7,6 +7,7 @@
   flex-direction: row;
   align-items: center;
   overflow-scrolling: auto;
+  overflow: auto;
 }
 
 .contact {
@@ -17,6 +18,7 @@
   flex-direction: row;
   align-items: center;
   overflow-scrolling: auto;
+
 }
 
 .web_bg .div {
@@ -48,13 +50,69 @@
   background-position: 50% 50%;
 }
 
-.web_bg .home-text-main {
-  position: absolute;
-  width: 747px;
-  height: 164px;
-  top: 70px;
-  left: 116px;
+
+.web_bg .home-main {
+position: absolute;
+width: 745px;
+height: 187px;
+top: 67px;
+left: 116px;
 }
+.web_bg .overlap-group {
+position: relative;
+width: 747px;
+height: 187px;
+}
+.web_bg .emoji-hh {
+position: absolute;
+width: 150px;
+height: 150px;
+top: 0;
+left: 490px;
+background-image: url(./assets/hh.png);
+background-size: cover;
+background-position: 50% 50%;
+}
+.web_bg .home-text-main {
+position: absolute;
+width: 747px;
+height: 154px;
+top: 33px;
+left: 0;
+}
+.web_bg .text_mm {
+position: absolute;
+width: 745px;
+top: 0;
+left: 0;
+font-family: var(--font-home-font-family);
+font-weight: var(--font-home-font-weight);
+color: #ffffff;
+font-size: var(--font-home-font-size);
+text-align: center;
+letter-spacing: var(--font-home-letter-spacing);
+line-height: var(--font-home-line-height);
+font-style: var(--font-home-font-style);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*.web_bg .home-text-main {*/
+/*  position: absolute;*/
+/*  width: 747px;*/
+/*  height: 164px;*/
+/*  top: 70px;*/
+/*  left: 116px;*/
+/*}*/
 
 .web_bg .home-text-main .htmain {
   margin-right: 50px;
@@ -151,9 +209,10 @@
   line-height: normal;
 }
 
-.web_bg .e_hh{
+.e_hh{
   background-image: url(./assets/hh.png);
-  /*background-size: cover;*/
+  background-size: cover;
+  background-position: 50% 50%;
 }
 
 /*home buttons*/
@@ -452,4 +511,48 @@
   font-size: 24px;
   font-weight: 700;
   color: #ffffff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.box .emoji-hh {
+position: absolute;
+width: 150px;
+height: 150px;
+top: 0;
+left: 490px;
+background-image: url(./assets/hh.png);
+background-size: cover;
+background-position: 50% 50%;
 }
