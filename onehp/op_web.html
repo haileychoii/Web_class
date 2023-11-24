@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="pagestyle_web.css" />
   </head>
   <body>
-    <div class="container-fluid web_bg">
+    <div class="container-fluid web_bg"  id = 'home'>
 
 
     <div class="main_group justify-content-center container-fluid d-flex">
@@ -58,7 +58,7 @@
             <div class="collapse navbar-collapse text-light font-weight-bold " id="navbarNav">
                 <ul class="navbar-nav">
                     <li class="nav-item mx-5 my-1">
-                        <a class="nav-link" href="home_web.html"><span>Home</span></a>
+                        <a class="nav-link" href="#home"><span>Home</span></a>
                     </li>
                     <li class="nav-item mx-5 my-1">
                         <a class="nav-link" href=#about><span>About</span></a>
@@ -82,19 +82,33 @@
 <!--about page begin        -->
     <div class = 'main d-flex container' id = 'about'>
 
-        <p class = 'main_image'><img src = 'assets/loopy1.png'/></p>
-
-        <p class="main_text">
+<!--        about page main begin-->
+        <div class = ' row'>
+<!--            about-main-image area-->
+            <div class = 'col-sm-3'>
+                <p><img src = 'assets/magicwand.PNG' class = 'about-main-image-1'/></p>
+                <p><img src = 'assets/arrow.PNG' class = 'about-main-image-2'/></p>
+                <p><img src = 'assets/loopy1.png' class = 'main_image'/></p>
+            </div>
+<!--            about-main-image area-->
+<!--about-main-text area            -->
+            <div class = 'container col-sm-9'>
+                <div class = 'main_text pl-5'>
             <span class = 'white_txt'>I'm Junhee Choi</span><br>
             <span class = "yellow_txt">Student</span>
 <!--            <span class = 'white_txt'> and </span>-->
 <!--            <span class="yellow_txt">AI</span><br>-->
             <span class = 'white_txt'> and </span>
             <span class="yellow_txt">Data Scientist</span>
-        </p>
-
+                </div>
+            </div>
+<!--about-main-text area            -->
+        </div>
+<!--        about page main end-->
     </div>
 <!--about page end-->
+
+
 
 
 
@@ -104,7 +118,7 @@
     <footer class="footer d-flex justify-content-center align-items-center">
 
             <p class="footer-icon"><img src="./assets/email.svg"/></p>
-            <p class="footer-icon"><img src="./assets/github.svg"/></p>
+            <a href = 'https://github.com/haileychoii'><p class="footer-icon"><img src="./assets/github.svg"/></p></a>
             <p class="footer-icon"><img src="./assets/insta.svg" /></p>
 
     </footer>
