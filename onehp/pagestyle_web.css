@@ -2,6 +2,13 @@
 
 body {
   margin: 0; /* Remove default margin from body */
+  background-color: #000000;
+}
+
+.full-bg {
+  background-color: #000000;
+  overflow-scrolling: auto;
+
 }
 
 .web_bg {
