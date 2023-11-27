@@ -33,7 +33,7 @@
              float: center;
          }
 
-         #nav {
+         .nav {
              background-color: #f1aeb5;
              backdrop-filter: blur(10px);
 
@@ -43,7 +43,7 @@
 
          }
 
-         #nav span{
+         .nav span{
              display: inline-block;
              text-align: center;
              margin: 10px;
@@ -56,24 +56,23 @@
              /*justify-content: center;*/
          }
 
-        #goodsContainer {
+        .goodsContainer {
             margin:  5px;
         }
 
         .goodsItem {
             margin: 5px;
+            width: fit-content;
         }
 
         .goodsImage {
-        display: flex;
-        justify-content: center; /* 이미지들을 두 열로 나타나게 하며, 사이 공간은 동일하게 유지합니다 */
-        flex-wrap: wrap;
-        width: calc(45% - 20px); /* 이미지의 너비를 조절하고 사이 공간을 제외합니다 */
-        max-width: 100%; /* 이미지가 화면 너비를 초과하지 않도록 최대 너비 설정 */
-        height: auto;
-        margin: 10px;
+
+        width: 300px;
+        padding: 5px;
         }
-        #textsection {
+
+
+        .textsection {
             display: grid;
             font-size: 17px;
             font-family: "UhBee namsoyoung", "UhBee Gmin2", "G마켓 산스 TTF Medium";
@@ -118,7 +117,7 @@
                 font-size: 8px;
             }
 
-            #textsection {
+            .textsection {
                 justify-content: space-around;
                 font-size: 12px;
                 width: 90%;
@@ -129,7 +128,7 @@
 </head>
 <body>
 <div class = 'full_bg'>
-<div id = 'nav'>
+<div class = 'nav'>
 
     <div id = 'nav_sub'>
         <a href = '#origin'><span>잔망루피의 시작</span></a>
@@ -144,19 +143,19 @@
 </div>
 
 <header class = "header">
-    <div id = 'textsection'>
+    <div class = 'textsection container'>
     <h1>잔망루피</h1>
     <p> 잔망루피에 대해서 알아보자. Let's get Janmang-Loopy</p>
+
+
+        <img width = 250px src = 'https://item.kakaocdn.net/do/47b82cccfb62e78d71b1590e32a57e5e7154249a3890514a43687a85e6b6cc82'>
     </div>
-
-        <img width = 30% src = 'https://item.kakaocdn.net/do/47b82cccfb62e78d71b1590e32a57e5e7154249a3890514a43687a85e6b6cc82'>
-
 </header>
 
 
 <section class = "section">
     <div id ='origin'>
-        <div id = 'textsection'>
+        <div class = 'textsection'>
         <h2>잔망루피의 시작</h2>
         <p>
             잔망루피는 귀엽다.
@@ -171,53 +170,49 @@
     </div>
 
     <div id = 'jjal'>
-        <div id = 'textsection'>
+        <div class = 'textsection'>
 
             <h2>잔망루피 짤</h2>
             <p>잔망루피는 다양한 짤을 가지고 있다. 이 짤들은 카카오 이모티콘으로도 만들어 졌다.<p>
-            <p>
+            <div class = container>
             <img width="150" src = 'https://ugc.production.linktr.ee/jl9DQQM1QxiPQklpiKii_GjzZ0fFXW61vAGZx'>
             <img width="150" src = 'https://item.kakaocdn.net/do/3727c16c143eb219d7b32939d9886113ce9463e040a07a9462a54df43e1d73f1'>
             <img width="150" src = 'https://i.pinimg.com/originals/42/30/2f/42302f6ace3098eee5959fdd985b2918.png'>
             <img width="150" src = 'https://blog.kakaocdn.net/dn/IS176/btrd3b2NHms/ffJV368S3rodwYHAVBBvI0/img.jpg'>
             <img width="150" src = 'https://item.kakaocdn.net/do/58119590d6204ebd70e97763ca933bafeffd194bae87d73dd00522794070855d'>
             <img width="150" src = 'https://mblogthumb-phinf.pstatic.net/MjAyMTA4MTFfMjYw/MDAxNjI4NjY1NzQxMzg4.PydAeWgJk_7k2CfIZnFsnKZAWwIM1Az46OKsZ2P0nCUg.9WKQi7nh4DOSxwUmx5hHKbkKr_hQy0F-H1ZluCYwNO8g.JPEG.bbekimha/20.jpg?type=w800'>
-            </p>
+            </div>
     </div>
     </div>
 
     <div id="use">
-        <div id = 'textsection'>
+        <div class = 'textsection'>
             <h2>잔망루피 굿즈</h2>
             잔망루피는 팝업스토어, 크라우드 펀딩, 각종 브랜드와의 협업 등을 통해 수많은 굿즈들을 생산하여 뤂덕들의 마음을 흔들어 놓았다. 잔망루피 인형, 키링, 그립톡, 메모지, 다이어리, 마스킹테이프, 카드, 고데기, 스티커, 무선 키보드와 마우스 세트, 폰케이스, 무선 충전기, 피규어, USB, 염색약, 찹쌀떡, 각종 유튜브와 광고 등등.. 셀 수 없이 많은 루피 굿즈는 뤂덕들의 지갑을 열리게 했다.
         </div>
-        <div id="goodsContainer">
-            <div class="goodsItem">
-                <img class="goodsImage" src="https://tumblbug-pci.imgix.net/65e320aad8ff79269b2dabb9e993628c1595eff2/e6c12f7f74e01d8f046d8f294ba30dd04d1294d2/1bfd2221910f8bae063f49f0472fef80ce58e8d0/d1e4b0e2-efb0-4c50-8077-e2ecedf130d3.jpg?ixlib=rb-1.1.0&w=1240&h=930&auto=format%2Ccompress&lossless=true&fit=crop&s=33b8523bd4b75017c2376b4cbb383b34" alt="굿즈 1">
-            </div>
-            <div class="goodsItem">
-                <img class="goodsImage" src="https://thumbnail.10x10.co.kr/webimage/image/basic600/435/B004353026.jpg?cmd=thumb&w=400&h=400&fit=true&ws=false" alt="굿즈 2">
-            </div>
-            <div class="goodsItem">
-                <img class="goodsImage" src="https://tumblbug-pci.imgix.net/d05a1d64f756ec69917d918d04d51173c6bcdef9/9b66c790cef649e6574c570ed958691216407133/f8e8a549813339d56f45a59aeed32c15bd7a9407/2b8553ed-2df0-4787-9d1a-6eacd743f3d1.jpeg?ixlib=rb-1.1.0&w=1240&h=930&auto=format%2Ccompress&lossless=true&fit=crop&s=26f40d77cb8986f6641eb2ee9e7c50e3" alt="굿즈 2">
-            </div>
-            <div class="goodsItem">
-                <img class="goodsImage" src="https://file.mk.co.kr/meet/neds/2021/12/image_readtop_2021_1212474_16406590784897828.jpg" alt="굿즈 2">
+        <div class ="goodsContainer">
+            <div class = 'row'>
+                <div class = 'cols-sm-6 pl-2 goodsItem'>
+
+                    <img class="goodsImage" src="https://tumblbug-pci.imgix.net/65e320aad8ff79269b2dabb9e993628c1595eff2/e6c12f7f74e01d8f046d8f294ba30dd04d1294d2/1bfd2221910f8bae063f49f0472fef80ce58e8d0/d1e4b0e2-efb0-4c50-8077-e2ecedf130d3.jpg?ixlib=rb-1.1.0&w=1240&h=930&auto=format%2Ccompress&lossless=true&fit=crop&s=33b8523bd4b75017c2376b4cbb383b34" alt="굿즈 1">
+                    <img class="goodsImage" src="https://thumbnail.10x10.co.kr/webimage/image/basic600/435/B004353026.jpg?cmd=thumb&w=400&h=400&fit=true&ws=false" alt="굿즈 2">
+                    <img class="goodsImage" src="https://file.mk.co.kr/meet/neds/2021/12/image_readtop_2021_1212474_16406590784897828.jpg" alt="굿즈 2">
+                    <img class="goodsImage" src="https://photo.sentv.co.kr/photo/2023/06/09/20230609092047.jpg" alt="굿즈 2">
+                </div>
+
+                <div class = 'cols-sm-6 pr-2 goodsItem'>
+                    <img class="goodsImage" src="https://thumbnail.10x10.co.kr/webimage/image/basic600/435/B004353026.jpg?cmd=thumb&w=400&h=400&fit=true&ws=false" alt="굿즈 2">
+                    <img class="goodsImage" src="https://file.mk.co.kr/meet/neds/2021/12/image_readtop_2021_1212474_16406590784897828.jpg" alt="굿즈 2">
+                    <img class="goodsImage" src="https://t1.daumcdn.net/news/202106/18/spotvnews/20210618131029684csho.jpg" alt="굿즈 2">
+                    <img class="goodsImage" src="https://blog.kakaocdn.net/dn/sfCKe/btsfpe4aBSu/FMxrJcxaCde5xBGCIDJFpk/img.jpg" alt="굿즈 2">
+                </div>
+
             </div>
 
-             <div class="goodsItem">
-                <img class="goodsImage" src="https://t1.daumcdn.net/news/202106/18/spotvnews/20210618131029684csho.jpg" alt="굿즈 2">
-            </div>
-            <div class="goodsItem">
-                <img class="goodsImage" src="https://photo.sentv.co.kr/photo/2023/06/09/20230609092047.jpg" alt="굿즈 2">
-            </div>
-            <div class="goodsItem">
-                <img class="goodsImage" src="https://blog.kakaocdn.net/dn/sfCKe/btsfpe4aBSu/FMxrJcxaCde5xBGCIDJFpk/img.jpg" alt="굿즈 2">
-            </div>
 
 
             <!-- 나머지 이미지들도 동일한 방식으로 추가합니다 -->
-        </div>
+
 
 
 
