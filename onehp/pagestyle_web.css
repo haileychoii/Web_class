@@ -63,7 +63,7 @@ body {
   height: 320px;
   top: 0;
   left: 0;
-  background-image: url(assets/cobby.png);
+  background-image: url(assets_op/cobby.png);
   background-size: cover;
   background-position: 50% 50%;
 }
@@ -87,7 +87,7 @@ width: 150px;
 height: 150px;
 top: 0;
 left: 490px;
-background-image: url(assets/hh.png);
+background-image: url(assets_op/hh.png);
 background-size: cover;
 background-position: 50% 50%;
 }
@@ -97,21 +97,42 @@ width: 747px;
 height: 154px;
 top: 33px;
 left: 0;
+
+
 }
+
+
 .web_bg .text_mm {
-position: absolute;
-width: 745px;
-top: 0;
-left: 0;
-font-family: var(--font-home-font-family);
-font-weight: var(--font-home-font-weight);
+  position: absolute;
+  width: 745px;
+  top: 0;
+  left: 0;
+  font-family: var(--font-home-font-family);
+  font-weight: var(--font-home-font-weight);
   text-shadow: 0px 4px 4px #00000040;
-color: #ffffff;
-font-size: var(--font-home-font-size);
-text-align: center;
-letter-spacing: var(--font-home-letter-spacing);
-line-height: var(--font-home-line-height);
-font-style: var(--font-home-font-style);
+  color: #ffffff;
+  font-size: var(--font-home-font-size);
+  text-align: center;
+  letter-spacing: var(--font-home-letter-spacing);
+  line-height: var(--font-home-line-height);
+  font-style: var(--font-home-font-style);
+
+
+}
+
+.text_mm span{
+  opacity: 0;
+  animation: reveal 0.5s forwards var(--d);
+}
+
+@keyframes reveal {
+  from {
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    translate: none;
+  }
 }
 
 
@@ -195,7 +216,7 @@ font-style: var(--font-home-font-style);
   height: 200px;
   top: 188px;
   left: 783px;
-  background-image: url(./assets/cobby2.png);
+  background-image: url(assets_op/cobby2.png);
   background-size: cover;
   background-position: 50% 50%;
 }
@@ -527,7 +548,7 @@ width: 150px;
 height: 150px;
 top: 0;
 left: 490px;
-background-image: url(./assets/hh.png);
+background-image: url(./assets_op/hh.png);
 background-size: cover;
 background-position: 50% 50%;
 }
