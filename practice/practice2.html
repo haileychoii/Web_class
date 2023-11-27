@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>웹 문서 구조화 연습 by 시멘틱 태그</title>
+     <style>
+
+         #container{
+             background-color: #e5c7ca;
+             font-family: "UhBee namsoyoung", "UhBee Se_hyun"., "G마켓 산스 TTF Medium";
+         width: 100%
+         }
+
+         .header {
+             display: grid;
+             align-items: center;
+             justify-content: center;
+         }
+         .header h1{
+             margin-top: 70px;
+         }
+
+         #main_image{
+             display: flex;
+             justify-content: center;
+             float: center;
+         }
+
+         #nav {
+             background-color: #f1aeb5;
+             backdrop-filter: blur(10px);
+
+             display: flex;
+             width: 100%;
+             position: fixed;
+
+         }
+
+         #nav span{
+             display: inline-block;
+             text-align: center;
+             margin: 10px;
+
+             font-size: 12px;
+             font-family: "UhBee namsoyoung";
+         }
+
+         section{
+             /*justify-content: center;*/
+         }
+
+        #goodsContainer {
+            margin:  5px;
+        }
+
+        .goodsItem {
+            margin: 5px;
+        }
+
+        .goodsImage {
+        display: flex;
+        justify-content: center; /* 이미지들을 두 열로 나타나게 하며, 사이 공간은 동일하게 유지합니다 */
+        flex-wrap: wrap;
+        width: calc(45% - 20px); /* 이미지의 너비를 조절하고 사이 공간을 제외합니다 */
+        max-width: 100%; /* 이미지가 화면 너비를 초과하지 않도록 최대 너비 설정 */
+        height: auto;
+        margin: 10px;
+        }
+        #textsection {
+            display: grid;
+            font-size: 17px;
+            font-family: "UhBee namsoyoung", "UhBee Gmin2", "G마켓 산스 TTF Medium";
+            width: 70%; /* 70%로 변경 */
+            text-align: left;
+            margin: 0 auto; /* 수평 가운데 정렬을 위해 추가 */;
+        }
+
+        #footer {
+            background-color: #e685b5;
+
+            width: 100%;
+            height: 120px;
+            /*position: static;*/
+            font-size: 10px;
+        }
+
+        #footer div {
+            display: inline-block;
+            font-family: "UhBee namsoyoung", "UhBee Se_hyun", "G마켓 산스 TTF Medium";
+            margin : 20px 20px 5px 5px;
+            /*display: flex;*/
+        }
+
+        /* 미디어 쿼리를 사용하여 화면 크기에 따라 이미지 크기를 조절합니다. */
+        @media screen and (max-width: 480px) {
+            /*.goodsItem {*/
+            /*    width: 100%;*/
+            /*}*/
+            .goodsImage {
+        display: block; /* 이미지를 블록 요소로 변경 */
+        margin: 0 auto; /* 좌우 중앙 정렬 */
+
+            justify-content: center;
+            width: 100%;
+            height: auto;
+        }
+
+
+
+            #nav span{
+                font-size: 8px;
+            }
+
+            #textsection {
+                justify-content: space-around;
+                font-size: 12px;
+                width: 90%;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+<div id = container>
+<div id = 'nav'>
+
+    <div id = 'nav_sub'>
+        <a href = '#origin'><span>잔망루피의 시작</span></a>
+    </div>
+    <div id = 'nav_sub'>
+        <a href = '#jjal'><span>잔망루피 짤</span></a>
+    </div>
+    <div id = 'nav_sub'>
+        <a href = '#use'><span>다양한 잔망루피 굿즈</span></a>
+    </div>
+
+</div>
+
+<header class = "header">
+    <div id = 'textsection'>
+    <h1>잔망루피</h1>
+    <p> 잔망루피에 대해서 알아보자. Let's get Janmang-Loopy</p>
+    </div>
+    <div id = "main_image">
+    <img width=30% src ='photo/janmangloopy1-removebg-preview.png'>
+        <img width = 30% src = 'https://item.kakaocdn.net/do/47b82cccfb62e78d71b1590e32a57e5e7154249a3890514a43687a85e6b6cc82'>
+    </div>
+</header>
+
+
+<section class = "section">
+    <div id ='origin'>
+        <div id = 'textsection'>
+        <h2>잔망루피의 시작</h2>
+        <p>
+            잔망루피는 귀엽다.
+            루피는 원래 어린이 애니메이션 뽀로로에서 조연의 캐릭터였다. 하지만 어느 한 중학생이 인터넷 상에서
+            루피의 표정을 확대하거나 루피의 표정을 변화시키는 등 루피 특유의 표정을 다양한 짤로 만들면서
+            루피 짤은 큰 인기를 얻게 되었다. 이로 인해 루피는 뽀로로보다 더한 인기를 누리게 되었고,
+            특히 지금은 뽀로로를 시청하지 않으나 어렸을 때 많이 시청했던 2, 30대 등 다양한 연령층들에게 인기가 많아졌다.
+            루피는 이러한 루피의 표정이 잔망스럽다는 것에 기초하여 '잔망루피'라는 명칭이 생겼다.
+            janmang loopy라고도 하며, 다양한 밈과 잔망루피를 이용한 다양한 굿즈들이 생산되었다.
+            필자도 잔망루피를 좋아하여 잔망루피 굿즈를 몇 개 가지고 있다. 잔망루피X신한카드 체크카드, 2022 시즌그리팅 잔망루피 육공 다이어리 세트 등을 구매하기도 하였다. 잔망루피의 핑크핑크함과 귀여운 굿즈들이 통장을 텅텅 비게 만든다.  </p>
+    </div>
+    </div>
+
+    <div id = 'jjal'>
+        <div id = 'textsection'>
+
+            <h2>잔망루피 짤</h2>
+            <p>잔망루피는 다양한 짤을 가지고 있다. 이 짤들은 카카오 이모티콘으로도 만들어 졌다.<p>
+            <p>
+            <img width="150" src = 'https://ugc.production.linktr.ee/jl9DQQM1QxiPQklpiKii_GjzZ0fFXW61vAGZx'>
+            <img width="150" src = 'https://item.kakaocdn.net/do/3727c16c143eb219d7b32939d9886113ce9463e040a07a9462a54df43e1d73f1'>
+            <img width="150" src = 'https://i.pinimg.com/originals/42/30/2f/42302f6ace3098eee5959fdd985b2918.png'>
+            <img width="150" src = 'https://blog.kakaocdn.net/dn/IS176/btrd3b2NHms/ffJV368S3rodwYHAVBBvI0/img.jpg'>
+            <img width="150" src = 'https://item.kakaocdn.net/do/58119590d6204ebd70e97763ca933bafeffd194bae87d73dd00522794070855d'>
+            <img width="150" src = 'https://mblogthumb-phinf.pstatic.net/MjAyMTA4MTFfMjYw/MDAxNjI4NjY1NzQxMzg4.PydAeWgJk_7k2CfIZnFsnKZAWwIM1Az46OKsZ2P0nCUg.9WKQi7nh4DOSxwUmx5hHKbkKr_hQy0F-H1ZluCYwNO8g.JPEG.bbekimha/20.jpg?type=w800'>
+            </p>
+    </div>
+    </div>
+
+    <div id="use">
+        <div id = 'textsection'>
+            <h2>잔망루피 굿즈</h2>
+            잔망루피는 팝업스토어, 크라우드 펀딩, 각종 브랜드와의 협업 등을 통해 수많은 굿즈들을 생산하여 뤂덕들의 마음을 흔들어 놓았다. 잔망루피 인형, 키링, 그립톡, 메모지, 다이어리, 마스킹테이프, 카드, 고데기, 스티커, 무선 키보드와 마우스 세트, 폰케이스, 무선 충전기, 피규어, USB, 염색약, 찹쌀떡, 각종 유튜브와 광고 등등.. 셀 수 없이 많은 루피 굿즈는 뤂덕들의 지갑을 열리게 했다.
+        </div>
+        <div id="goodsContainer">
+            <div class="goodsItem">
+                <img class="goodsImage" src="https://tumblbug-pci.imgix.net/65e320aad8ff79269b2dabb9e993628c1595eff2/e6c12f7f74e01d8f046d8f294ba30dd04d1294d2/1bfd2221910f8bae063f49f0472fef80ce58e8d0/d1e4b0e2-efb0-4c50-8077-e2ecedf130d3.jpg?ixlib=rb-1.1.0&w=1240&h=930&auto=format%2Ccompress&lossless=true&fit=crop&s=33b8523bd4b75017c2376b4cbb383b34" alt="굿즈 1">
+            </div>
+            <div class="goodsItem">
+                <img class="goodsImage" src="https://thumbnail.10x10.co.kr/webimage/image/basic600/435/B004353026.jpg?cmd=thumb&w=400&h=400&fit=true&ws=false" alt="굿즈 2">
+            </div>
+            <div class="goodsItem">
+                <img class="goodsImage" src="https://tumblbug-pci.imgix.net/d05a1d64f756ec69917d918d04d51173c6bcdef9/9b66c790cef649e6574c570ed958691216407133/f8e8a549813339d56f45a59aeed32c15bd7a9407/2b8553ed-2df0-4787-9d1a-6eacd743f3d1.jpeg?ixlib=rb-1.1.0&w=1240&h=930&auto=format%2Ccompress&lossless=true&fit=crop&s=26f40d77cb8986f6641eb2ee9e7c50e3" alt="굿즈 2">
+            </div>
+            <div class="goodsItem">
+                <img class="goodsImage" src="https://file.mk.co.kr/meet/neds/2021/12/image_readtop_2021_1212474_16406590784897828.jpg" alt="굿즈 2">
+            </div>
+
+             <div class="goodsItem">
+                <img class="goodsImage" src="https://t1.daumcdn.net/news/202106/18/spotvnews/20210618131029684csho.jpg" alt="굿즈 2">
+            </div>
+            <div class="goodsItem">
+                <img class="goodsImage" src="https://photo.sentv.co.kr/photo/2023/06/09/20230609092047.jpg" alt="굿즈 2">
+            </div>
+            <div class="goodsItem">
+                <img class="goodsImage" src="https://blog.kakaocdn.net/dn/sfCKe/btsfpe4aBSu/FMxrJcxaCde5xBGCIDJFpk/img.jpg" alt="굿즈 2">
+            </div>
+
+
+            <!-- 나머지 이미지들도 동일한 방식으로 추가합니다 -->
+        </div>
+
+
+
+
+
+    </div>
+
+
+</section>
+<div id = 'footer'>
+    <div>잔망루피스토어</div>
+    <div>빤쮸토끼</div>
+    <div>어프어프</div>
+
+</div>
+</div>
+<!--#container div tag-->
+</body>
+</html>
