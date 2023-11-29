@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>while repeat sentence</title>
+</head>
+<body>
+<h3>while 문으로 0부터 n까지 합</h3><hr>
+<script>
+    var n = prompt('0보다 큰 정수를 입력하시오', 0);
+    n = parseInt(n);    // 문자열 n을 숫자로 변경, 근데 사실 필요 없음
+
+    var i = 0, sum = 0;
+    while(i<=n){
+        sum += i;
+        i++;
+    }   // i가 0부터 n까지 반복
+    document.write('0에서 '+n+'까지 합은 '+sum);
+</script>
+
+
+
+</body>
+</html>
