@@ -1,11 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>repeat break, sentence</title>
-
 </head>
 <body>
+<h2>
+  Break sentence
+</h2>
+  <p>-> break문을 직접 포함하는 반복문을 벗어나도록 함</p>
+  <div style="background-color: #e5c7ca; margin: 5px; padding: 10px; border-radius: 10px;">
+    <h4>1에서 얼마까지 더해야 3000을 넘는가?</h4><hr>
+    <script>
+    var  i = 0, sum = 0;
+    while (true) {            //무한 반복
+      sum += i;
+      if (sum>3000)
+        break;      //반복문 벗어남
+      i++;
+    }
+    document.write(i + " 까지 더하면 3000 넘음: "+ sum);
+    </script>
+<!--    <div class = 'dis'>-->
+<!--      <span>var  i = 0, sum = 0;</span>-->
+<!--      <span>while (true) {            //무한 반복</span>-->
+<!--      <span>sum += i;</span>-->
+<!--      <span>if (sum>3000)</span>-->
+<!--      <span>  break;      //반복문 벗어남</span>-->
+<!--      <span>i++;</span>-->
+<!--      <span>}</span>-->
+<!--      <span>document.write(i + " 까지 더하면 3000 넘음: "+ sum);</span>-->
+<!--    </div>-->
+<!--  </div>-->
 
+
+  <h2>Continue sentence</h2>
+  <p>
+    한 번의 반복에 해당하는 명령을 중단하고 다음 반복으로 이동
+  </p>
+  <div style="background-color: #8bb9fe; margin: 5px; padding: 10px; border-radius: 10px;">
+    <h4>
+      3으로 나눈 나머지가 1인 수만 더하기
+    </h4><hr>
+    <script>
+      var sum = 0;
+      for (i = 1; i<10;i++){
+        if(i%3 != 1)    //3으로 나눈 나머지가 1이 아닌 경우 다음 반복으로 점프(i++코드로)
+          continue;
+        document.write(i + " ");
+        sum += i;
+      }
+      document.write('합은 '+ sum);
+    </script>
+  </div>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
 </html>

@@ -8,6 +8,9 @@ body {
 .full-bg {
   background-color: #000000;
   overflow-scrolling: auto;
+  width: 100%;
+  /*display: flex;*/
+  justify-content: center;
 
 }
 
@@ -228,10 +231,10 @@ left: 0;
   position: absolute;
   width: 322px;
   height: 49px;
-  /*top: 525px;*/
-  top: 70%;
-  /*left: 415px;*/
-  left: 36%
+  top: 525px;
+  /*top: 70%;*/
+  left: 415px;
+  /*left: 36%*/
 }
 
 .c-buttons{
