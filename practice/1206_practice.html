@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/font-applesdgothicneo@1.0/all.min.css">
+    <link rel="stylesheet" href="styleguide.css" />
+    <link rel="stylesheet" href="pagestyle_web.css" />
+  <style>
+    .rtitle{font-size: 28px;
+      font-family: Pretendard, AppleSDGothicNeo, sans-serif;
+      font-weight: 800;}
+    .titlet{ font-size: 24px;
+      font-family: Pretendard, AppleSDGothicNeo, sans-serif;
+      font-weight: 700;
+
+    }
+
+    .bodyt {font-size: 16px;
+      font-family: Pretendard, AppleSDGothicNeo, sans-serif;
+      font-weight: 400;
+    }
+  </style>
+
+</head>
+<body>
+<div class = 'container'>
+<div class = 'rtitle'>JavaScript</div>
+<div class = 'container'>
+  <div class = 'titlet'>HTML 태그와 자바스크립트 객체</div>
+  <p class = 'bodyt'>자바스크립트는 브라우저로부터 3가지 유형의 객체를 제공받아 활용</p>
+</div>
+
+<p id = 'firstP' class = 'bodyt' style = 'color: blue' onclick = "this.style.color = 'teal'">
+  이것은<span style = 'colored'>문장입니다.</span>
+</p>
+  <div class = container>
+<p class = 'titlet'>HTML 태그 <-> DOM 객체</p>
+  <table class = 'table'>
+  <thead >
+    <tr><th>HTML태그</th><th>DOM 객체</th></tr>
+  </thead>
+  <tbody class = 'bodyt'>
+  <tr>
+    <td>태그 이름</td><td>하위 DOM 객체 걸렉션</td>
+  </tr>
+  <tr>
+    <td>속성</td><td>속성</td>
+  </tr>
+  <tr>
+    <td>CSS3 스타일</td><td>CSS3 스타일</td>
+  </tr>
+  <tr>
+    <td>이벤트 리스너</td><td>이벤트 리스너</td>
+  </tr>
+  <tr>
+    <td>컨텐츠</td><td>메쏘드</td>
+  </tr>
+  </tbody>
+</table>
+</div>
+
+ <div class = 'titlet'>
+   DOM 객체 다루기 - say hello
+   <p class = 'bodyt'>
+     Say hello to
+     <input type = 'text' id = 'name'>
+     <button onclick = 'say_hello()'>Say</button>
+   </p>
+   <div id = 'content'></div>
+   <script class='bodyt'>
+     function say_hello(){
+       var name = document.getElementById('name').value;
+       var message = '<h2>Hello' + name + "!</h2>";
+
+       document.getElementById('content').innerHTML = message;
+
+       if (name === 'student'){
+         var title = document.getElementById('title ').innerHTML;
+         //var title = document.querySelector("#title").textContent;
+         title += '& Loving it!';
+         document.querySelector('#title').textContent = title;
+       }
+     }
+   </script>
+ </div>
+
+
+
+
+
+
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>
