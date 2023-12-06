@@ -1,0 +1,5 @@
+/* 어비폰트 - 웹폰트 설정영역 */
+@font-face {font-family: 'UhBeeSe_hyun';src: url('UhBeeSe_hyun.eot');}
+@font-face {font-family: 'UhBeeSe_hyun';src: url('UhBeeSe_hyun.woff') format('woff');}
+article { font-family: "UhBeeSe_hyun", serif;}
+textarea  {font-family: "UhBeeSe_hyun", serif; }

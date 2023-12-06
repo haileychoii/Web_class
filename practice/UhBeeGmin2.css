@@ -1,0 +1,5 @@
+/* 어비폰트 - 웹폰트 설정영역 */
+@font-face {font-family: 'UhBeeGmin2';src: url('UhBeeGmin2.eot');}
+@font-face {font-family: 'UhBeeGmin2';src: url('UhBeeGmin2.woff') format('woff');}
+article { font-family: "UhBeeGmin2", serif;}
+textarea  {font-family: "UhBeeGmin2", serif; }

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/font-applesdgothicneo@1.0/all.min.css">
+    <link rel="stylesheet" href="styleguide.css" />
+    <link rel="stylesheet" href="pagestyle_web.css" />
+
+  </head>
+<body>
+<div data-include-path = 'menu.html'></div>
+<script src = 'js/get_tags.js'></script>
+
+<nav class = 'navbar navbar-expand-sm navbar-dark bg-dark'>
+  <div class ='container-fluid'>
+    <a class = 'navbar-brand' href = '/index.html'>
+      <img src = 'mypage/assets/hh.png' style = 'width: 40px;' class= ='round-pill'/>
+    </a>
+    <button class = 'navbar-toggler' type = 'button' data-bs-toggle="collapse" data-bs-target="#my_navbar">
+      <span class="navbar-toggle-icon"></span>
+    </button>
+    <div id = 'my_navbar' class = 'collapse navbar-collapse'>
+      <ul class = 'navbar-nav'>
+        <li class = 'nav-item'>
+          <a class = 'nav-link' href = '/index.html'>Index</a></li>
+        <li class = 'nav-item'>
+          <a class = 'nav-link active' href = 'mypage/home_web.html'>Home</a></li>
+        <li class = 'nav-itme dropdown'>
+          <a class='nav-link dropdown-toggle' data-bs-toggle = 'dropdown'
+             href = 'mypage/portfolios_web.html'>portfolios</a>
+          <ul class  = 'dropdown-menu'>
+            <li><a class = 'dropdown-item' href = 'mypage/contact_web.html'>Contact</a></li>
+            <li><a class = 'dropdown-item' href = 'practice2.html'>Loopy</a></li>
+            <li><a class = 'dropdown-item' href = 'practice1.html'>Practice</a></li>
+
+          </ul>
+        </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!--Carousel-->
+<div id = 'demo' class = 'carousel-slide' data-bs-toggle = 'carousel'>
+<!--  indicator/dots-->
+  <div class = 'carousel-indicators'>
+    <button type = 'button' data-bs-toggle = '#demo' data-bs-slide-to = '0' class = 'active'></button>
+    <button type = 'button' data-bs-toggle = '#demo' data-bs-slide-to = '1' class = 'active'></button>
+    <button type = 'button' data-bs-toggle = '#demo' data-bs-slide-to = '1' class = 'active'></button>
+  </div>
+
+<!--  the slideshow/carousel-->
+  <div class = 'carousel-inner'>
+    <div class = 'carousel-item active'>
+      <img src = 'https://mblogthumb-phinf.pstatic.net/MjAyMjA1MDdfMjU4/MDAxNjUxOTI2OTMyNjM4.Fv0QCDYzmb3tFBZ_kZDCzJuHyF-coYLSRgTHpW28vOIg.XkKVaw8P7cQFs4HLTHh20YiErBpVl9tNan7WybvIJdwg.JPEG.solim13/SE-8bad637a-2a99-426f-95d7-567ad466deb0.jpg?type=w800'/>
+    </div>
+    
+  </div>
+
+<!--  left and right controls.icons-->
+  <button class = 'carousel-control-prev' type = 'button' data-bs-toggle = '#demo' data-bs-slide = 'prev'>
+    <span class = 'carousel-control-prev-icon'></span>
+  </button>
+  <button class = 'carousel-control-next' type = 'button' data-bs-toggle = '#demo' data-bs-slide = 'next'>
+    <span class = 'carousel-control-next-icon'></span>
+  </button>
+</div>
+
+
+
+
+
+</body>
+</html>

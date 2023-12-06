@@ -1,0 +1,5 @@
+/* 어비폰트 - 웹폰트 설정영역 */
+@font-face {font-family: 'UhBeeJJIBBABBA';src: url('UhBeeJJIBBABBA.eot');}
+@font-face {font-family: 'UhBeeJJIBBABBA';src: url('UhBeeJJIBBABBA.woff') format('woff');}
+article { font-family: "UhBeeJJIBBABBA", serif;}
+textarea  {font-family: "UhBeeJJIBBABBA", serif; }
