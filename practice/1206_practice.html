@@ -16,7 +16,6 @@
     .titlet{ font-size: 24px;
       font-family: Pretendard, AppleSDGothicNeo, sans-serif;
       font-weight: 700;
-
     }
 
     .bodyt {font-size: 16px;
@@ -63,8 +62,9 @@
 </table>
 </div>
 
+<div>
  <div class = 'titlet'>
-   DOM 객체 다루기 - say hello
+   DOM 객체 다루기 - say hello</div>
    <p class = 'bodyt'>
      Say hello to
      <input type = 'text' id = 'name'>
@@ -74,7 +74,7 @@
    <script class='bodyt'>
      function say_hello(){
        var name = document.getElementById('name').value;
-       var message = '<h2>Hello' + name + "!</h2>";
+       var message = '<p class = 'cody'>Hello ' + name + "!</p>";
 
        document.getElementById('content').innerHTML = message;
 
@@ -87,6 +87,35 @@
      }
    </script>
  </div>
+<이벤트 class = rtitle(Event)>와 이벤트 처리기(handler)</이벤트>
+  <div>
+    <p class = 'bdodyp'>
+      이벤트(events) 마우스 글릭, 키보드 입력, 이미지나 HTML 문서의 로딩, 타이머의 타임아웃 등 사용자의 입력 행위나 문서나 브라우저의 상태 변화에 의해 발생하는 것
+
+    </p>
+    <div class = titlet>
+      동적 HTML 문서 만들기 - HTML 문서 작성기
+    </div>
+
+    <script>
+      var win = null;
+      function show_HTML()
+      {
+        if win == null ||win.closed)
+                win = window.open("", "out_win", width = 400, height = 300);
+        var.text = document.getElementById('src_code').value;
+        win.document.open();
+        win.document.write(text);
+        win.document.close()
+      }
+  </script>
+    <div class = titlet>
+      HTML 문서 편집기
+    </div>
+    <p>다음의 편집기에서 HTML 문서를 작성한 후 보기 버튼을 클릭하세요.</p>
+    <textarea id = 'src_code', rows= '20', cols = '80'></textarea><br>
+    <input type = 'button' value = '보기' onclick = 'show_HTML()'>
+  </div>
 
 
 

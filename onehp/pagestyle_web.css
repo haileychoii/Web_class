@@ -18,8 +18,8 @@ body {
 .hpcon {
   background-color: #000000;
   overflow: hidden;
-  width: 1152px;
-  height: 700px;
+  /*width: 1152px;*/
+  /*height: 700px;*/
   position: relative;
 }
 
@@ -131,6 +131,16 @@ left: 0;
 
 
 }
+
+@media (max-width: 768px) {
+        .web_bg .text_mm  {
+          font-size: 3.5rem;
+        }
+      }
+
+
+
+
 
 .text_mm span{
   opacity: 0;
