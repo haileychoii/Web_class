@@ -5,10 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
     <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/font-applesdgothicneo@1.0/all.min.css">
-    <link rel="stylesheet" href="styleguide.css" />
-    <link rel="stylesheet" href="pagestyle_web.css" />
+
   <style>
     .rtitle{font-size: 28px;
       font-family: Pretendard, AppleSDGothicNeo, sans-serif;
@@ -26,7 +25,89 @@
 
 </head>
 <body>
+
+<div class = 'card mb-5' style = 'width: 300px;' id = 'About-me'>
+  <img class = 'card-img-top' src = 'https://i.pinimg.com/736x/b3/53/8a/b3538a4b6328c66732a003d660c86f71.jpg' style = 'width: 100%'>
+  <div class = 'card-body'>
+    <h4 class = 'card-title'>Janmang Loopy</h4>
+    <p class = 'card-text'>Janmang Loopy is character of Pororo. Loopy is popular itself. </p>
+    <a href = '#' class = 'btn btn-primary'>See Profiles</a>
+  </div>
+</div>
+
+<!--nav class-->
 <div class = 'container'>
+  <div class ='rtitle'>Nav class Navbar class</div>
+  <div class = 'titlet'>Nav class: 수평 메뉴 작성을 위해 사용</div>
+  <ul class = 'bodyt'>
+    <li>ul 태그 요소를 nav 클래스로 지정</li>
+    <li>li 태그 요소에 대해 nav-item 클래스로 지정</li>
+    <li> a 태그 요소에 대해 nav-link 클래스로 지정</li>
+  </ul>
+
+  <div class = 'titlet'>Navbar 클래스 </div>
+  <ul class = 'bodyt'>
+    <li>페이지의 상단에 위치시키는 네비게이션 헤더</li>
+    <li>스크린의 크기에 따라 네비게이션 바의 크기를 확대/축소 가능</li>
+    <li>네비게이션 bar 관련 클래스
+    <table class = 'table table-hover mt-4'>
+      <thead class = 'table-dark'>
+      <tr><th>클래스 이름</th><th>기능</th></tr>
+      </thead>
+      <tbody>
+      <tr>
+        <td>navbar</td><td>수평 네비게이션 바 생성</td>
+      </tr>
+      <tr>
+        <td>navbar-expand-*(sm md lg xl xxl)</td><td>화면 크기에 따른 반응형 네비게이션 바 설정, 생략 시 수직 네비게이션 바로 설정</td></tr>
+      <tr><td>navbar-nav</td><td>네비게이션 바에 포함될 네비게이션 메뉴 ul, div 지정</td></tr>
+      <tr><td>bg-color 클래스</td><td>네비게이션 바의 배경색 지정</td></tr>
+      <tr><td>navbar-dark, navbar-light</td><td>네비게이션 바의 텍스트 색을 흰색(검은색)으로 지정</td></tr>
+      <tr>
+        <td>navbar-brand</td><td>웹 사이트의 로고, 이름, 브랜드 등 지정</td></tr>
+      <tr>
+        <td>navbar-toggler <span class  = 'text-danger'>data-bs-'collapse' data-bs-target='대상 메뉴 id'</span></td><td>collapsivle 네비게이션 바를 생성하기 위해 button의 클래스로 지정</td></tr>
+      <tr><td>collapse navbar-collapse</td><td>네비게이션 메뉴를 포함하는 div에 설정하는 클래스. id 속성값 - data-bs-target에 지정된 아이디와 일치</td></tr></tbody>
+
+    </table>
+    </li>
+  </ul>
+  <div class = 'titlet'>
+    <nav class = 'navbar navbar-expand-lg navbar-dark bg-dark'>
+      <div class = 'container-fluid'>
+        <a class = 'navbar-brand' href = 'https://www.google.com/?&bih=707&biw=1536&hl=ko'>
+          <image src = 'https://item.kakaocdn.net/do/58119590d6204ebd70e97763ca933bafa88f7b2cbb72be0bdfff91ad65b168ab' style = 'width: 40px;' class = round-pill></image></a>
+        <button class = 'navbar-toggler' type = 'button' data-bs-toggle = 'collapse' data-bs-target = '#my_navbar'>
+          <span class = 'navbar-toggler-icon'></span>
+          </button>
+        <div id = 'my_navbar' class ='collapse navbar-collapse'>
+          <ul class = 'navbar-nav'>
+            <li class = 'nav-item'>
+              <a class = 'nav link text-decoration-none data-bs-toggle = "tooltip" title = "Have fun" href = '#'>Home</a></li>
+            <li class = 'nav-item'>
+              <a class = 'nav-link active text-decoration-none' href = '#About-me'>About me</a></li>
+            <li class = 'nav-item dropdown'>
+              <a class = 'nav-link dropdown-toggle' data-bs-toggle = 'dropdown'
+                 href = '#'>Portfolios</a>
+              <ul class = 'dropdown-menu bodyt'>
+                <li><a class = 'dropdown-item' href = '#'>과 제 </a></li>
+                <li><a class = 'dropdown-item' href = '#'>실 습</a></li>
+                <li><a class = 'dropdown-item' href = '#'>데이터분석</a></li>
+              </ul></li>
+
+
+            <li class = 'nav item'><a class = 'nav-link' href = '#'>Favorites</a><li>
+            <li class = 'nav-item'><a class = 'nav-link disabled' href = '#'>Q&A</a></li>
+
+
+        </div>
+
+
+      </div>
+    </nav>
+</div>
+
+<div class = 'container mt-5'>
 <div class = 'rtitle'>JavaScript</div>
 <div class = 'container'>
   <div class = 'titlet'>HTML 태그와 자바스크립트 객체</div>
@@ -87,10 +168,10 @@
      }
    </script>
  </div>
-<이벤트 class = rtitle(Event)>와 이벤트 처리기(handler)</이벤트>
+<div class = 'rtitle'>이벤트(Event)와 이벤트 처리기(handler)</div>
   <div>
-    <p class = 'bdodyp'>
-      이벤트(events) 마우스 글릭, 키보드 입력, 이미지나 HTML 문서의 로딩, 타이머의 타임아웃 등 사용자의 입력 행위나 문서나 브라우저의 상태 변화에 의해 발생하는 것
+    <p class = 'titlet mb-4'>
+      이벤트(events): 마우스 글릭, 키보드 입력, 이미지나 HTML 문서의 로딩, 타이머의 타임아웃 등 사용자의 입력 행위나 문서나 브라우저의 상태 변화에 의해 발생하는 것
 
     </p>
     <div class = titlet>
@@ -112,7 +193,7 @@
     <div class = titlet>
       HTML 문서 편집기
     </div>
-    <p>다음의 편집기에서 HTML 문서를 작성한 후 보기 버튼을 클릭하세요.</p>
+    <p class = 'bodyt'>다음의 편집기에서 HTML 문서를 작성한 후 보기 버튼을 클릭하세요.</p>
     <textarea id = 'src_code', rows= '20', cols = '80'></textarea><br>
     <input type = 'button' value = '보기' onclick = 'show_HTML()'>
   </div>
@@ -124,6 +205,6 @@
 
 </div>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
 </body>
 </html>

@@ -185,7 +185,19 @@ background-position: 50% 50%;
   font-style: var(--font-home-body-font-style);
 }
 
-
+.home-text-body-mobile{
+  text-shadow: 0px 4px 4px #00000040;
+  font-family: var(--font-home-body-font-family);
+  font-weight: var(--font-home-body-font-weight);
+  color: #ffffff;
+  font-size: var(--font-home-body-font-size);
+  text-align: center;
+  letter-spacing: var(--font-home-body-letter-spacing);
+  /*line-height: var(--font-home-body-line-height);*/
+  line-height: 1.7em;
+  font-style: var(--font-home-body-font-style);
+  display: none;
+}
 
 /*home buttons*/
 .about-me {
@@ -287,7 +299,6 @@ background-position: 50% 50%;
 .footer-icon {
   width: auto;
   height: 22px;
-  width: auto;
   margin-right: 30px;
 }
 /*footer end*/
@@ -299,33 +310,21 @@ background-position: 50% 50%;
   width: 88%;
   /*background-color: #e5c7ca;*/
   margin-top: 150px;
-  right: 8%;
+  /*right: 8%;*/
 
 }
 /*about page의 루피 img*/
 .main_image{
-  max-width: 290px;
+  width: 290px;
   min-width: 270px;
 
-}
-
-.about-main-image-1{
-  width: 50px;
-  height: auto;
-}
-
-.about-main-image-2{
-  width: 120px;
-  height: auto;
-  position: relative;
-  right: 10px;
 }
 
 
 
 
 .main_text{
-  margin-top : 50px;
+  margin-top : 40px;
   max-font-size: 55px;
   min-font-size: 32px;
   /*width: 702px;*/
@@ -362,7 +361,6 @@ background-position: 50% 50%;
 .about_body_text_m{
   position: absolute;
   color:#FFFFFF;
-
   font-family: var(--font-about-body-m-font-family);
   font-size: var(--font-about-body-m-font-size);
   font-weight: var(--font-about-body-m-font-weight);
@@ -373,7 +371,6 @@ background-position: 50% 50%;
 .about_body_text_b{
   position: absolute;
   color: #FFFFFF;
-
   font-family: var(--font-about-body-b-font-family);
   font-size: var(--font-about-body-b-font-size);
   font-weight: var(--font-about-body-b-font-weight);
@@ -382,37 +379,32 @@ background-position: 50% 50%;
 
 /*portfolios page begins*/
 .portfolios {
-  /*background-color: #000000;*/
-  /*width: 100%;*/
-  /*height: 100vh;*/
-  /*display: flex;*/
-  /*flex-wrap: wrap;*/
-  /*flex-direction: row;*/
-  /*align-items: center;*/
-  /*overflow-scrolling: auto;*/
+
 }
 
-.filebox {
-  display: flex;
-  position: relative;
+.pf-begin{
+  width: 100%;
+  font-size: 110px;
+  font-family: Pretendard, AppleSDGothicNeo, sans-serif;
+  font-weight: 900;
 
-  justify-content: space-between; /* Position items at both ends */
-  align-items: center;
-  /*justify-content: space-evenly;*/
-  width: 47%;
-  height: 181px;
-  border: 1px;
-  border-radius: 19px;
-  /*background-color: #9ec5fe;*/
+  line-height: var(--font-about-body-m-line-height) ;
+  justify-content: center;
+  color: #FFFFFF;
+  display: flex;
+  justify-content: center;
+}
+
+@media (max-width: 768px min-width: 1280px;){
+  .pf-begin {
+    font-size: 90px;
+  }
 }
 
 .portfolios_file {
-
   /*width: 469px;*/
   height: 181px;
   /*top: 0;*/
-
-
   border-radius: 19px;
   border: 1px solid rgba(255, 255, 255, 0.08);
 
@@ -425,9 +417,33 @@ background-position: 50% 50%;
   color: #ffffff;
 }
 
+.pf_card {
+  border-radius: 19px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
 
+  background: linear-gradient(159deg, rgba(255, 255, 255, 0.40) -100%, rgba(255, 255, 255, 0.04) 100%);
+  box-shadow: -5px -5px 250px 0px rgba(255, 255, 255, 0.02) inset;
+  backdrop-filter: blur(21px);
+  font-family: Pretendard, AppleSDGothicNeo, sans-serif;
+  font-size: 22px;
+  font-weight: 700;
+  color: #ffffff;
+}
 
+.pf_card_header{
+  font-size: 12px;
+  font-family: Pretendard, AppleSDGothicNeo, sans-serif;
+  font-weight: 500;
+  color: #ffffff;
+}
 
+.pf_card_title{
+  font-size: 30px;
+  font-family: Pretendard, AppleSDGothicNeo, sans-serif;
+  font-weight: 800;
+  color: #ffffff;
+  text-shadow: 0px 4px 4px #00000040;
+}
 
 
 
