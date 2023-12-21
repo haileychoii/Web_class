@@ -253,6 +253,16 @@ background-position: 50% 50%;
                 }
       }
 
+.nav-drop-pf{
+  font-family: Pretendard, AppleSDGothicNeo, sans-serif;
+  font-size : 20px;
+  font-weight: 700;
+  backdrop-filter: blur(21px);
+  box-shadow: -5px -5px 250px 0px rgba(255, 255, 255, 0.02) inset;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+            background: linear-gradient(159deg, rgba(255, 255, 255, 0.40) -100%, rgba(255, 255, 255, 0.04) 100%);
+}
+
 /*navvar end*/
 
 .home .group {
@@ -435,7 +445,7 @@ background-position: 50% 50%;
 }
 
 .pf-button {
-  position: absolute;
+
   /*top: 25px;*/
   font-size: 15px;
   font-family: Pretendard, AppleSDGothicNeo, sans-serif;

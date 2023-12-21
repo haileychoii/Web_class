@@ -123,6 +123,8 @@
 
   </head>
   <body>
+
+
   <div class = 'full-bg'>
       <div data-bs-spy="scroll" data-bs-target='#main_bar' data-bs-smooth-scroll="true">
       <!--navigation bar-->
@@ -140,26 +142,35 @@
                     <li class="nav-item mx-5 my-1">
                         <a class="nav-link" href=#about><span>About</span></a>
                     </li>
-                    <li class="nav-item mx-5 my-1">
-                        <a class="nav-link" href="#portfolios"><span>Portfolios</span></a>
+                    <li class="nav-item dropdown mx-5 my-1">
+                        <a class="nav-link dropdown-toggle" href="#portfolios" role = 'button' data-bs-toggle = 'dropdown' aria-expanded = 'false'><span>Portfolios</span></a>
+                            <ul class="dropdown-menu nav-drop-pf">
+                                <li><a class="dropdown-item" href="#what_ive_done">What I've done</a></li>
+                                <li><a class="dropdown-item" href="#main_project">Main Project</a></li>
+                                <li>
+                                    <hr class = 'dropdown-divider'>
+                                </li>
+                                <li><a class="dropdown-item disabled">Something else here</a></li>
+                            </ul>
                     </li>
                     <li class="nav-item mx-5 my-1">
                         <a class="nav-link" href="#blog"><span>Blog</span></a>
                     </li>
                     <li class="nav-item mx-5 my-1">
                         <a class="nav-link" href="#contact"><span>Contact</span></a>
+
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
 <!--navigation bar done-->
-<div  data-bs-spy="scroll" data-bs-target = 'main-bar'>
+<div  data-bs-spy="scroll" data-bs-target = '#main_bar'>
 <!--  home page begin-->
-    <div class="container-sm web_bg">
+    <section class="container-sm web_bg" id = 'home'>
 <!--home page contents-->
 <!--    <div class = 'hpcon'>-->
-        <div class="main_group justify-content-center container-fluid"   id = 'home'>
+        <article class="main_group justify-content-center container-fluid"  >
             <div class="pic-cobby"></div>
             <div class="pic"></div>
             <div class="home-main">
@@ -186,7 +197,7 @@
             <div class="home-text-body-mobile">
               I am a college student who is interested in DATA SCIENCE. I am majoring in statistics and double majoring in HCI Science.
             </div>
-        </div>
+        </article>
 <!--        main group done-->
 
 <!-- buttons begin - about me, portfolios         -->
@@ -199,13 +210,13 @@
   </a>
 </div>
 <!-- buttons end - about me, portfolios         -->
-    </div>
+    </section>
 <!--home page contents end-->
 
 <!--home page end           -->
 
 <!--my cat carousel-->
-    <div class = 'my_cat'>My Scaredy Cat</div>
+    <section class = 'my_cat'>My Scaredy Cat</section>
 <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
   <div class="carousel-inner">
     <div class="carousel-item active">
@@ -245,7 +256,7 @@
 
 
 <!--about page begin        -->
-    <div class = 'd-flex container mt-5 pb-5' id = 'about'>
+    <section class = 'd-flex container mt-5 pb-5' id = 'about'>
 
 <!--        about page main begin-->
         <div class = 'row'>
@@ -267,13 +278,13 @@
 <!--about-main-text area            -->
         </div>
 <!--        about page main end-->
-    </div>
+    </section>
 <!--about page end-->
 
     <!--portfolios page begin    -->
-    <div class = 'container pt-2'style = 'margin-top: 130px; margin-bottom: 20px;' id = 'portfolios' >
+    <section class = 'container pt-2' style = 'margin-top: 130px; margin-bottom: 20px;' id = 'portfolios' >
 <!--시작 멘트        -->
-        <span class = 'pf-begin mb-4' style = ' margin-bottom: 20px'>What I've Done</span>
+        <span class = 'pf-begin mb-4' style = ' margin-bottom: 20px' id = 'what_ive_done'>What I've Done</span>
 
 <!--1st row start        -->
         <div class="row">
@@ -284,7 +295,7 @@
         <p class="card-title pf_card_title">Web Programming class</p>
         <p class="card-text">HTML, CSS, JavaScript and BS5</p>
         <div class="btn-group" role="group" aria-label="Basic example">
-            <a href="https://haileychoii.github.io/Web_class/" type="button" class="btn btn-light pf-button">Homework</a>
+            <a href="https://haileychoii.github.io/Web_class/" type="button" class="btn btn-light pf-button">HOMEWORK</a>
 
             <div class="btn-group" role="group">
                 <a type="button" class="btn btn-light dropdown-toggle pf-button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -323,7 +334,7 @@
     <div class="card text-center pf_card">
 <!--      <div class = 'card-header pf_card_header'>23-2</div>-->
       <div class="card-body">
-        <p class="card-title pf_card_title">Web Programming class</p>
+        <p class="card-title pf_card_title">DALC</p>
         <p class="card-text">HTML, CSS, JavaScript and BS5</p>
         <a href="https://haileychoii.github.io/Web_class/" class="btn btn-light pf-button">Go HW</a>
       </div>
@@ -348,24 +359,24 @@
 <!--3rd row begin-->
             <!--3rd row start        -->
 <!--시작 멘트        -->
-        <span class = 'pf-begin mb-4' style = ' margin-bottom: 20px; margin-top: 100px;'>MAIN PROJECT</span>
+        <span class = 'pf-begin mb-4' id = "main_project" style = ' margin-bottom: 20px; margin-top: 100px;'>MAIN PROJECT</span>
 <div class="row mt-3">
   <div class="col-sm-6 mb-3 mb-sm-0">
     <div class="card text-center pf_card">
 <!--      <div class = 'card-header pf_card_header'>23-2</div>-->
       <div class="card-body">
-        <p class="card-title pf_card_title">Web Programming class</p>
-        <p class="card-text">HTML, CSS, JavaScript and BS5</p>
-        <a href="https://haileychoii.github.io/Web_class/" class="btn btn-light pf-button">Go HW</a>
+        <p class="card-title pf_card_title">DALC</p>
+        <p class="card-text">Dongduk AI Learning Crew</p>
+        <a href="https://hungry-bus-174.notion.site/Projects-Timeline-ca11abc2c0254072a0d4c4f2ef2c9a42?pvs=4" class="btn btn-light pf-button">contents</a>
       </div>
     </div>
   </div>
   <div class="col-sm-6">
     <div class="card text-center pf_card">
       <div class="card-body">
-        <p class="card-title pf_card_title">Web Programming class</p>
-        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-        <a href="#" class="btn btn-light pf-button">Go practice</a>
+        <p class="card-title pf_card_title">2023년 K-water 대국민 물 빅데이터 공모전</p>
+        <p class="card-text">환경 데이터 융합을 통한 시화호 수질 변동 예측 및 대응 전략 연구</p>
+        <a href="#" class="btn btn-light pf-button">project</a>
       </div>
         </div>
           </div>
@@ -376,14 +387,17 @@
 
 
 
-
+</section>
 <!--    portfolios page end-->
 
 
 
 
+
+
+
 <!--contact page begin-->
-    <div class = 'container web_bg mt-5' id = 'contact'>
+    <section class = 'container web_bg mt-5' id = 'contact'>
 <!--그림들-->
         <div class = 'container'>
 <div style="width: 100%; height: 100%; position: absolute;">
@@ -402,7 +416,7 @@
 </div>
         </div>
 
-    </div>
+    </section>
 
 <!--contact page end-->
 
@@ -413,11 +427,9 @@
 
     <!-- Bootstrap Footer -->
     <footer class="footer d-flex justify-content-center align-items-center">
-
             <p class="footer-icon"><img src="assets_op/email.svg"/></p>
             <a href = 'https://github.com/haileychoii'><p class="footer-icon"><img src="assets_op/github.svg"/></p></a>
-            <p class="footer-icon"><img src="assets_op/insta.svg" /></p>
-
+            <a href = 'https://instagram.com/mungchi_haru'><p class="footer-icon"><img src="assets_op/insta.svg" /></p></a>
     </footer>
 <!--    footer done      -->
 
@@ -426,6 +438,8 @@
 </div>
 </div>
 <!--all done-->
+
+
 
 
   <!-- Option 1: Bootstrap Bundle with Popper -->
