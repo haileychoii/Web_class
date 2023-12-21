@@ -3,6 +3,8 @@ body {
   background-color: #000000;
 }
 
+@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/variable/pretendardvariable.css');
+
 .full-bg {
   background-color: #000000;
   overflow-scrolling: auto;
@@ -186,23 +188,26 @@ background-position: 50% 50%;
 }
 
 .home-text-body-mobile{
-  text-shadow: 0px 4px 4px #00000040;
-  font-family: var(--font-home-body-font-family);
-  font-weight: var(--font-home-body-font-weight);
-  color: #ffffff;
-  font-size: var(--font-home-body-font-size);
-  text-align: center;
-  letter-spacing: var(--font-home-body-letter-spacing);
-  /*line-height: var(--font-home-body-line-height);*/
-  line-height: 1.7em;
-  font-style: var(--font-home-body-font-style);
   display: none;
+  position: relative;
+      top: 310px;
+      text-align: center;
+      text-shadow: 0px 4px 4px #00000040;
+      font-family: var(--font-home-body-font-family);
+      font-weight: var(--font-home-body-font-weight);
+      color: #ffffff;
+      font-size: var(--font-home-body-font-size);
+    letter-spacing: var(--font-home-body-letter-spacing);
+  /*line-height: var(--font-home-body-line-height);*/
+    line-height: 1.7em;
+    font-style: var(--font-home-body-font-style);
+
 }
 
 /*home buttons*/
 .about-me {
-      background-color: #fdb827;
-      background: linear-gradient(100deg, #ffae00, #f9e866);
+      /*background-color: #fbf7b8;*/
+      background: linear-gradient(100deg, #fbf7b8, #facfd9);
       -webkit-backdrop-filter: blur(20px);
       backdrop-filter: blur(20px);
       box-shadow: 20px 20px 50px 0 rgba(0, 0, 0, 0.37);
@@ -225,7 +230,7 @@ background-position: 50% 50%;
     }
 
     .button-portfolios {
-      background: linear-gradient(135deg, #38424c, #b67ed6);
+      background: linear-gradient(135deg, #d2feff, #f6bee5);
       -webkit-backdrop-filter: blur(20px);
       backdrop-filter: blur(20px);
       box-shadow: 20px 20px 50px 0 rgba(0, 0, 0, 0.37);
@@ -268,9 +273,6 @@ background-position: 50% 50%;
                 }
       }
 
-.navbar-nav .nav-link:hover {
-            color: #e5c7ca; /* 마우스 호버 시 색상 변경 */
-        }
 
 
 
@@ -303,11 +305,18 @@ background-position: 50% 50%;
 }
 /*footer end*/
 
+#about{
+  border-radius: 19px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
 
+  background: linear-gradient(159deg, rgba(255, 255, 255, 0.40) -100%, rgba(255, 255, 255, 0.04) 100%);
+  box-shadow: -5px -5px 250px 0px rgba(255, 255, 255, 0.02) inset;
+  backdrop-filter: blur(21px);
+}
 /*about page의 main loopy, text start*/
 /*루피+자기소개 큰 문구*/
 .main{
-  width: 88%;
+  /*width: 88%;*/
   /*background-color: #e5c7ca;*/
   margin-top: 150px;
   /*right: 8%;*/
@@ -317,17 +326,12 @@ background-position: 50% 50%;
 .main_image{
   width: 290px;
   min-width: 270px;
-
 }
 
-
-
-
 .main_text{
-  margin-top : 40px;
+  margin-top : 80px;
   max-font-size: 55px;
   min-font-size: 32px;
-  /*width: 702px;*/
   text-shadow: 0px 4px 4px #00000040;
   font-family: var(--font-about-font-family);
   font-size: var(--font-home-font-size);
@@ -355,8 +359,8 @@ background-position: 50% 50%;
   width: 91.4%;
   display: flex;
   justify-content: center;
-
 }
+
 /*about body text*/
 .about_body_text_m{
   position: absolute;
@@ -379,6 +383,7 @@ background-position: 50% 50%;
 
 /*portfolios page begins*/
 .portfolios {
+  margin-top: 120px;
 
 }
 
@@ -387,19 +392,19 @@ background-position: 50% 50%;
   font-size: 110px;
   font-family: Pretendard, AppleSDGothicNeo, sans-serif;
   font-weight: 900;
+  line-height: 100px;
+  /*line-height: var(--font-about-body-m-line-height) ;*/
 
-  line-height: var(--font-about-body-m-line-height) ;
-  justify-content: center;
   color: #FFFFFF;
-  display: flex;
-  justify-content: center;
+
+
 }
 
-@media (max-width: 768px min-width: 1280px;){
-  .pf-begin {
-    font-size: 90px;
-  }
-}
+/*@media (max-width: 768px min-width: 1280px;){*/
+/*  .pf-begin {*/
+/*    font-size: 90px;*/
+/*  }*/
+/*}*/
 
 .portfolios_file {
   /*width: 469px;*/
@@ -420,13 +425,13 @@ background-position: 50% 50%;
 .pf_card {
   border-radius: 19px;
   border: 1px solid rgba(255, 255, 255, 0.08);
-
+  height: 210px;
   background: linear-gradient(159deg, rgba(255, 255, 255, 0.40) -100%, rgba(255, 255, 255, 0.04) 100%);
   box-shadow: -5px -5px 250px 0px rgba(255, 255, 255, 0.02) inset;
   backdrop-filter: blur(21px);
   font-family: Pretendard, AppleSDGothicNeo, sans-serif;
-  font-size: 22px;
-  font-weight: 700;
+  font-size: 21px;
+  font-weight: 500;
   color: #ffffff;
 }
 
@@ -438,14 +443,22 @@ background-position: 50% 50%;
 }
 
 .pf_card_title{
-  font-size: 30px;
+  font-size: 25px;
   font-family: Pretendard, AppleSDGothicNeo, sans-serif;
-  font-weight: 800;
+  font-weight: 700;
   color: #ffffff;
   text-shadow: 0px 4px 4px #00000040;
 }
 
-
+.pf-button {
+  position: absolute;
+  /*top: 25px;*/
+  font-size: 15px;
+  font-family: Pretendard, AppleSDGothicNeo, sans-serif;
+  font-weight: 700;
+  color: #000000;
+  text-shadow: 0px 4px 4px #00000040;
+}
 
 
 
