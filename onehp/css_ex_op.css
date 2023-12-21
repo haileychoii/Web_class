@@ -10,9 +10,7 @@ body {
   overflow-scrolling: auto;
   overflow: hidden;
   width: 100%;
-  /*display: inline-block;*/
   justify-content: space-evenly;
-
 }
 
 .hpcon {
@@ -30,9 +28,6 @@ body {
   flex-direction: column; /* Change flex-direction to column */
 }
 
-
-
-
 .contact {
   background-color: #000000;
   width: 100%;
@@ -41,7 +36,6 @@ body {
   flex-direction: row;
   align-items: center;
   overflow-scrolling: auto;
-
 }
 
 
@@ -126,10 +120,6 @@ background-position: 50% 50%;
         }
       }
 
-
-
-
-
 .text_mm span{
   opacity: 0;
   animation: reveal 0.5s forwards var(--d);
@@ -144,8 +134,6 @@ background-position: 50% 50%;
     translate: none;
   }
 }
-
-
 
 .web_bg .pic-hh img {
   position: absolute;
@@ -168,13 +156,6 @@ background-position: 50% 50%;
   height: 85px;
   bottom: -120px;
   left: 80px;
-  /*top: 275px;*/
-  /*left: 209px;*/
-}
-
-.web_bg .home-text-body {
-
-
   text-shadow: 0px 4px 4px #00000040;
   font-family: var(--font-home-body-font-family);
   font-weight: var(--font-home-body-font-weight);
@@ -262,7 +243,6 @@ background-position: 50% 50%;
 .navbar-toggler {
       border: None;
     .navbar-text {
-                    /*font-family: "Inter-Bold", Helvetica;*/
                     font-weight: 700;
                     color: #ffffff;
                     /*font-size: 14px;*/
@@ -272,9 +252,6 @@ background-position: 50% 50%;
                     margin: 0px;
                 }
       }
-
-
-
 
 /*navvar end*/
 
@@ -305,10 +282,30 @@ background-position: 50% 50%;
 }
 /*footer end*/
 
+/*my cat + carousel*/
+.my_cat{
+  font-family: Pretendard, AppleSDGothicNeo, sans-serif;
+  font-size: 80px;
+  font-weight: 900;
+  line-height: 1.1em;
+  color: #ffffff;
+  text-align: center;
+  margin: 10px 20px;
+
+}
+
+@media (max-width: 480px){
+  .my_cat{
+    font-size: 50px;
+  }
+}
+
+
+
+/*about page의 배경*/
 #about{
   border-radius: 19px;
   border: 1px solid rgba(255, 255, 255, 0.08);
-
   background: linear-gradient(159deg, rgba(255, 255, 255, 0.40) -100%, rgba(255, 255, 255, 0.04) 100%);
   box-shadow: -5px -5px 250px 0px rgba(255, 255, 255, 0.02) inset;
   backdrop-filter: blur(21px);
@@ -316,10 +313,7 @@ background-position: 50% 50%;
 /*about page의 main loopy, text start*/
 /*루피+자기소개 큰 문구*/
 .main{
-  /*width: 88%;*/
-  /*background-color: #e5c7ca;*/
   margin-top: 150px;
-  /*right: 8%;*/
 
 }
 /*about page의 루피 img*/
@@ -393,26 +387,16 @@ background-position: 50% 50%;
   font-family: Pretendard, AppleSDGothicNeo, sans-serif;
   font-weight: 900;
   line-height: 100px;
-  /*line-height: var(--font-about-body-m-line-height) ;*/
-
   color: #FFFFFF;
 
 
 }
 
-/*@media (max-width: 768px min-width: 1280px;){*/
-/*  .pf-begin {*/
-/*    font-size: 90px;*/
-/*  }*/
-/*}*/
-
 .portfolios_file {
   /*width: 469px;*/
   height: 181px;
-  /*top: 0;*/
   border-radius: 19px;
   border: 1px solid rgba(255, 255, 255, 0.08);
-
   background: linear-gradient(159deg, rgba(255, 255, 255, 0.40) -100%, rgba(255, 255, 255, 0.04) 100%);
   box-shadow: -5px -5px 250px 0px rgba(255, 255, 255, 0.02) inset;
   backdrop-filter: blur(21px);
@@ -459,33 +443,6 @@ background-position: 50% 50%;
   color: #000000;
   text-shadow: 0px 4px 4px #00000040;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 .box .emoji-hh {
 position: absolute;
