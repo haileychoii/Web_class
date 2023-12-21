@@ -403,7 +403,6 @@ background-position: 50% 50%;
 }
 
 .portfolios_file {
-  /*width: 469px;*/
   height: 181px;
   border-radius: 19px;
   border: 1px solid rgba(255, 255, 255, 0.08);
@@ -419,7 +418,7 @@ background-position: 50% 50%;
 .pf_card {
   border-radius: 19px;
   border: 1px solid rgba(255, 255, 255, 0.08);
-  height: 210px;
+  height: 250px;
   background: linear-gradient(159deg, rgba(255, 255, 255, 0.40) -100%, rgba(255, 255, 255, 0.04) 100%);
   box-shadow: -5px -5px 250px 0px rgba(255, 255, 255, 0.02) inset;
   backdrop-filter: blur(21px);
@@ -451,7 +450,32 @@ background-position: 50% 50%;
   font-family: Pretendard, AppleSDGothicNeo, sans-serif;
   font-weight: 700;
   color: #000000;
-  text-shadow: 0px 4px 4px #00000040;
+
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: #ea868f;
+  box-shadow: -5px -5px 250px 0px rgba(255, 255, 255, 0.02) inset;
+  backdrop-filter: blur(21px);
+}
+
+
+.card_img{
+
+  height: 130px;
+  width: auto;
+}
+
+.card_list{
+  font-size: 13px;
+  font-family: Pretendard, AppleSDGothicNeo, sans-serif;
+  font-weight: 500;
+  border-radius: 10px;
+  backdrop-filter: blur(21px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: -5px -5px 250px 0px rgba(255, 255, 255, 0.02) inset;
+  background: linear-gradient(159deg, rgba(255, 255, 255, 0.40) -100%, rgba(255, 255, 255, 0.04) 100%);
+
+
+
 }
 
 .box .emoji-hh {
@@ -462,4 +486,35 @@ top: 0;
 left: 490px;
 background-image: url(./assets_op/hh.png);
 background-size: cover;
-background-position: 50% 50%;
+background-position: 50% 50%;}
+
+#contact{
+  display: flex;
+
+}
+
+.contact_con {
+    position: relative;
+  min-height: 100vh;
+}
+
+.contact_main{
+  font-family: Pretendard, AppleSDGothicNeo, sans-serif;
+  font-weight: 700;
+  color: #ffffff;
+  font-size: 48px;
+  letter-spacing: 0;
+}
+
+.contact_body{
+  font-family: Pretendard, AppleSDGothicNeo, sans-serif;
+  font-weight: 600;
+  color: #ffffff;
+  font-size: 16px;
+  letter-spacing: 0;
+  word-wrap: break-word;
+}
+
+
+
+
